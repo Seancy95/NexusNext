@@ -1,0 +1,52 @@
+test_invalid_test_assurance_rejected (test_contracts.ContractTests.test_invalid_test_assurance_rejected) ... ok
+test_malformed_payload_rejected (test_contracts.ContractTests.test_malformed_payload_rejected) ... ok
+test_manifest_cannot_claim_tamper_proof (test_contracts.ContractTests.test_manifest_cannot_claim_tamper_proof) ... ok
+test_oversized_request_rejected (test_contracts.ContractTests.test_oversized_request_rejected) ... ok
+test_unknown_field_rejected (test_contracts.ContractTests.test_unknown_field_rejected) ... ok
+test_valid_contract (test_contracts.ContractTests.test_valid_contract) ... ok
+test_version_rejected (test_contracts.ContractTests.test_version_rejected) ... ok
+test_authorised (test_controller_replay.ControllerReplayTests.test_authorised) ... ok
+test_controller_dispatches_only_after_authorisation (test_controller_replay.ControllerReplayTests.test_controller_dispatches_only_after_authorisation) ... ok
+test_duplicate_and_altered_rejected (test_controller_replay.ControllerReplayTests.test_duplicate_and_altered_rejected) ... ok
+test_expiry_and_capacity (test_controller_replay.ControllerReplayTests.test_expiry_and_capacity) ... ok
+test_operation_and_scope_denied (test_controller_replay.ControllerReplayTests.test_operation_and_scope_denied) ... ok
+test_missing_or_ambiguous_evidence_is_not_demonstrated (test_evidence.EvidenceTests.test_missing_or_ambiguous_evidence_is_not_demonstrated) ... ok
+test_operational_log_retention (test_evidence.EvidenceTests.test_operational_log_retention) ... ok
+test_sensitive_keys_are_redacted (test_evidence.EvidenceTests.test_sensitive_keys_are_redacted) ... ok
+test_source_attribution_and_integrity (test_evidence.EvidenceTests.test_source_attribution_and_integrity) ... ok
+test_supported_and_failed_classification (test_evidence.EvidenceTests.test_supported_and_failed_classification) ... ok
+test_dummy_worker_lifecycle (test_ipc_environment.IpcEnvironmentTests.test_dummy_worker_lifecycle) ... ok
+test_malformed_worker_message (test_ipc_environment.IpcEnvironmentTests.test_malformed_worker_message) ... ok
+test_non_windows_report_is_explicitly_blocked (test_ipc_environment.IpcEnvironmentTests.test_non_windows_report_is_explicitly_blocked) ... ok
+test_access_denied_is_distinct (test_phase0_inspector.Phase0InspectorTests.test_access_denied_is_distinct) ... ok
+test_appcontainer_uncertainty_and_wrong_probe_removed (test_phase0_inspector.Phase0InspectorTests.test_appcontainer_uncertainty_and_wrong_probe_removed) ... ok
+test_applocker_scope_is_limited (test_phase0_inspector.Phase0InspectorTests.test_applocker_scope_is_limited) ... ok
+test_audit_failures_keep_exit_and_stderr_separate (test_phase0_inspector.Phase0InspectorTests.test_audit_failures_keep_exit_and_stderr_separate) ... ok
+test_auditpol_exit_87_fixture_is_a_failed_inspection (test_phase0_inspector.Phase0InspectorTests.test_auditpol_exit_87_fixture_is_a_failed_inspection) ... ok
+test_auditpol_mixed_fixture_is_partial (test_phase0_inspector.Phase0InspectorTests.test_auditpol_mixed_fixture_is_partial) ... ok
+test_documented_auditpol_guid_argument_format (test_phase0_inspector.Phase0InspectorTests.test_documented_auditpol_guid_argument_format) ... ok
+test_existing_run_collision_fails_closed (test_phase0_inspector.Phase0InspectorTests.test_existing_run_collision_fails_closed) ... ok
+test_firewall_uses_active_policy_store_without_enforcement_claim (test_phase0_inspector.Phase0InspectorTests.test_firewall_uses_active_policy_store_without_enforcement_claim) ... ok
+test_g2_not_passed_is_preserved (test_phase0_inspector.Phase0InspectorTests.test_g2_not_passed_is_preserved) ... ok
+test_invalid_auditpol_guid_is_rejected (test_phase0_inspector.Phase0InspectorTests.test_invalid_auditpol_guid_is_rejected) ... ok
+test_json_markdown_conclusions_are_consistent (test_phase0_inspector.Phase0InspectorTests.test_json_markdown_conclusions_are_consistent) ... ok
+test_manifest_detects_hash_mismatch (test_phase0_inspector.Phase0InspectorTests.test_manifest_detects_hash_mismatch) ... ok
+test_manifest_generated_and_verifies (test_phase0_inspector.Phase0InspectorTests.test_manifest_generated_and_verifies) ... ok
+test_manifest_hash_is_of_completed_outputs_only (test_phase0_inspector.Phase0InspectorTests.test_manifest_hash_is_of_completed_outputs_only) ... ok
+test_markdown_fixture_flattens_multiple_rows_and_limitations (test_phase0_inspector.Phase0InspectorTests.test_markdown_fixture_flattens_multiple_rows_and_limitations) ... ok
+test_missing_command_is_distinct (test_phase0_inspector.Phase0InspectorTests.test_missing_command_is_distinct) ... ok
+test_missing_provenance_is_rejected (test_phase0_inspector.Phase0InspectorTests.test_missing_provenance_is_rejected) ... ok
+test_no_active_or_policy_modifying_commands (test_phase0_inspector.Phase0InspectorTests.test_no_active_or_policy_modifying_commands) ... ok
+test_no_simulated_enforcement_is_reported (test_phase0_inspector.Phase0InspectorTests.test_no_simulated_enforcement_is_reported) ... ok
+test_non_windows_classification_is_blocked (test_phase0_inspector.Phase0InspectorTests.test_non_windows_classification_is_blocked) ... ok
+test_output_root_rejects_filesystem_root (test_phase0_inspector.Phase0InspectorTests.test_output_root_rejects_filesystem_root) ... ok
+test_partial_inspection_is_supported (test_phase0_inspector.Phase0InspectorTests.test_partial_inspection_is_supported) ... ok
+test_report_write_failure_is_not_reported_as_success (test_phase0_inspector.Phase0InspectorTests.test_report_write_failure_is_not_reported_as_success) ... ok
+test_token_integrity_uses_documented_token_api (test_phase0_inspector.Phase0InspectorTests.test_token_integrity_uses_documented_token_api) ... ok
+test_unsupported_functionality_is_distinct (test_phase0_inspector.Phase0InspectorTests.test_unsupported_functionality_is_distinct) ... ok
+test_valid_portable_fixture_matches_stable_schema (test_phase0_inspector.Phase0InspectorTests.test_valid_portable_fixture_matches_stable_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.026s
+
+OK

@@ -1,0 +1,987 @@
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_1_database_investigation_foundation.py", line 65, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_1_database_investigation_foundation.py", line 22, in main
+    check("Stage 58.1 version", APP_VERSION.startswith("0.8.0-stage58.") and STAGE == 58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_1_database_investigation_foundation.py", line 17, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.1 version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_2_background_database_discovery.py", line 132, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_2_background_database_discovery.py", line 77, in main
+    check("Stage 58.2+ version", APP_VERSION.startswith("0.8.0-stage58.") and STAGE == 58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_2_background_database_discovery.py", line 23, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.2+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_3_structural_database_understanding.py", line 131, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_3_structural_database_understanding.py", line 94, in main
+    check("Stage 58.3+ version", APP_VERSION.startswith("0.8.0-stage58.") and STAGE == 58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_3_structural_database_understanding.py", line 23, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.3+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_4_data_profiling_semantic_understanding.py", line 132, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_4_data_profiling_semantic_understanding.py", line 93, in main
+    check("Stage 58.4 version", APP_VERSION.startswith("0.8.0-stage58.") and STAGE == 58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_4_data_profiling_semantic_understanding.py", line 18, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.4 version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_5_database_explorer_ux.py", line 99, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_5_database_explorer_ux.py", line 31, in main
+    check("Stage 58.5+ version", APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 5 and STAGE == 58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_5_database_explorer_ux.py", line 26, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.5+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_6_investigation_session_framework.py", line 56, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_6_investigation_session_framework.py", line 22, in main
+    check("Stage 58.6 compatibility", APP_VERSION.startswith("0.8.0-stage58.") and STAGE == 58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_6_investigation_session_framework.py", line 17, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.6 compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_7_investigation_interpretation.py", line 120, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_7_investigation_interpretation.py", line 91, in main
+    check("Stage 58.7+ compatibility", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_7_investigation_interpretation.py", line 24, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.7+ compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_8_read_only_sql_safety.py", line 87, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_8_read_only_sql_safety.py", line 26, in main
+    check("Stage 58.8+ compatibility", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_8_read_only_sql_safety.py", line 21, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.8+ compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_9_sql_proposal_manual_workflow.py", line 54, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_9_sql_proposal_manual_workflow.py", line 22, in main
+    check("Stage 58.9 capability retained", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_9_sql_proposal_manual_workflow.py", line 17, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.9 capability retained
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_10_query_execution_result_viewer.py", line 55, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_10_query_execution_result_viewer.py", line 33, in main
+    check("Stage 58.10+ compatibility", APP_VERSION.startswith("0.8.0-stage58.") and STAGE==58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_10_query_execution_result_viewer.py", line 14, in check
+    if not condition: raise AssertionError(name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stage 58.10+ compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_11_interactive_query_refinement.py", line 44, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_11_interactive_query_refinement.py", line 20, in main
+    check("Stage 58.11+ compatibility", APP_VERSION.startswith("0.8.0-stage58.") and STAGE==58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_11_interactive_query_refinement.py", line 15, in check
+    if not condition: raise AssertionError(name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stage 58.11+ compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_12_cross_database_investigation.py", line 47, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_12_cross_database_investigation.py", line 28, in main
+    check("Stage 58.12 version", APP_VERSION.startswith("0.8.0-stage58.") and STAGE==58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_12_cross_database_investigation.py", line 15, in check
+    if not cond: raise AssertionError(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stage 58.12 version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_13_saved_reusable_queries.py", line 50, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_13_saved_reusable_queries.py", line 20, in main
+    check("Stage 58.13 version", APP_VERSION.startswith("0.8.0-stage58.") and STAGE==58)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_13_saved_reusable_queries.py", line 15, in check
+    if not cond: raise AssertionError(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stage 58.13 version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_14_export_investigation_completion.py", line 41, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_14_export_investigation_completion.py", line 17, in main
+    check("Stage 58.14+ compatibility", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_14_export_investigation_completion.py", line 12, in check
+    if not cond: raise AssertionError(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stage 58.14+ compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_15_closeout_certification.py", line 52, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_15_closeout_certification.py", line 21, in main
+    check("Stage 58.15+ application version", APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_15_closeout_certification.py", line 16, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.15+ application version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_16_service_desk_reporting_remediation.py", line 112, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_16_service_desk_reporting_remediation.py", line 60, in main
+    check('Stage 58.16+ application version', APP_VERSION.startswith('0.8.0-stage58.') and int(APP_VERSION.rsplit('.',1)[-1]) >= 16)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_16_service_desk_reporting_remediation.py", line 15, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.16+ application version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_17_service_desk_report_polish.py", line 57, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_17_service_desk_report_polish.py", line 19, in main
+    check('Stage 58.17+ application version', APP_VERSION.startswith('0.8.0-stage58.') and int(APP_VERSION.rsplit('.',1)[-1]) >= 17)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_17_service_desk_report_polish.py", line 14, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.17+ application version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_18_server_discovery_foundation.py", line 81, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_18_server_discovery_foundation.py", line 48, in main
+    check("Stage 58.18+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.',1)[-1]) >= 18)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_18_server_discovery_foundation.py", line 22, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.18+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_19_whole_server_structural_map.py", line 140, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_19_whole_server_structural_map.py", line 84, in main
+    check("Stage 58.19+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.',1)[-1]) >= 19)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_19_whole_server_structural_map.py", line 24, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.19+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_20_background_deep_learning_scheduler.py", line 112, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_20_background_deep_learning_scheduler.py", line 64, in main
+    check("Stage 58.20+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.', 1)[-1]) >= 20)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_20_background_deep_learning_scheduler.py", line 26, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.20+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_21_dynamic_investigation_prioritisation.py", line 133, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_21_dynamic_investigation_prioritisation.py", line 83, in main
+    check("Stage 58.21+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.', 1)[-1]) >= 21)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_21_dynamic_investigation_prioritisation.py", line 30, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.21+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_22_server_wide_investigation_search.py", line 87, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_22_server_wide_investigation_search.py", line 45, in main
+    check("Stage 58.22+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.', 1)[-1]) >= 22)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_22_server_wide_investigation_search.py", line 27, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.22+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_23_progress_eta_discovery_ux.py", line 97, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_23_progress_eta_discovery_ux.py", line 65, in main
+    check("Stage 58.23+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.',1)[-1]) >= 23)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_23_progress_eta_discovery_ux.py", line 27, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.23+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_24_server_change_detection.py", line 169, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_24_server_change_detection.py", line 100, in main
+    check("Stage 58.24+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit('.',1)[-1]) >= 24)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_24_server_change_detection.py", line 27, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.24+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_25_scale_resilience_closeout.py", line 214, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_25_scale_resilience_closeout.py", line 131, in main
+    check("Stage 58.25+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 25)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_25_scale_resilience_closeout.py", line 28, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.25+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_26_sql_investigation_ux.py", line 35, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_26_sql_investigation_ux.py", line 18, in main
+    check("Stage 58.26+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 26)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_26_sql_investigation_ux.py", line 13, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.26+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_27_sql_investigation_staged_ux.py", line 36, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_27_sql_investigation_staged_ux.py", line 19, in main
+    check("Stage 58.27 version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 27)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_27_sql_investigation_staged_ux.py", line 13, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.27 version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_28_azure_sql_discovery_and_layout.py", line 65, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_28_azure_sql_discovery_and_layout.py", line 41, in main
+    check("Stage 58.28+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_28_azure_sql_discovery_and_layout.py", line 16, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.28+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_29_investigation_interpretation_refinement.py", line 118, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_29_investigation_interpretation_refinement.py", line 80, in main
+    check("Stage 58.29 compatibility", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_29_investigation_interpretation_refinement.py", line 23, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.29 compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_30_refinement_traversal_and_server_execution.py", line 123, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_30_refinement_traversal_and_server_execution.py", line 97, in main
+    check("Stage 58.30 compatibility", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_30_refinement_traversal_and_server_execution.py", line 25, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.30 compatibility
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_31_location_intelligence_and_disambiguation.py", line 124, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_31_location_intelligence_and_disambiguation.py", line 96, in main
+    check("Stage 58.31+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_31_location_intelligence_and_disambiguation.py", line 20, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.31+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_32_source_state_isolation.py", line 83, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_32_source_state_isolation.py", line 26, in main
+    check("Stage 58.32+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_32_source_state_isolation.py", line 21, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.32+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_33_server_inventory_scope_integrity.py", line 102, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_33_server_inventory_scope_integrity.py", line 61, in main
+    check("Stage 58.33+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_33_server_inventory_scope_integrity.py", line 16, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.33+ version
+PASS: Current user entity remains available for identity anchoring
+PASS: History is explicitly deprioritised
+PASS: Exclusion table is penalised
+PASS: Human-readable establishment is resolved
+PASS: Geographic fields are selected
+PASS: Inactive mappings remain visible by default
+PASS: Optional location evidence is not mandatory in WHERE
+PASS: Audit columns omitted from answer SQL
+PASS: Sensitive hash omitted
+PASS: Logs parent opens a landing page
+PASS: SQL parent has home/library/investigation routes
+PASS: SQL landing separates routine and new work
+PASS: Home routes into capability hubs
+PASS: Current source remains visible in server-wide candidates
+PASS: Stage 5 remains hidden until Build SQL proposal
+Stage 58.34 investigation hubs and location-query correctness PASS
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_35_trusted_query_library.py", line 40, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_35_trusted_query_library.py", line 21, in main
+    check('Stage 58.35+ version', STAGE==58 and APP_VERSION.startswith('0.8.0-stage58.') and int(APP_VERSION.rsplit('.',1)[-1]) >= 35)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_35_trusted_query_library.py", line 15, in check
+    if not condition: raise AssertionError(name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Stage 58.35+ version
+PASS: Trusted queries remain available
+PASS: community-campus-user-courses renders as SELECT/CTE
+PASS: community-campus-password-reset-email renders as SELECT/CTE
+PASS: sequation-v1-password-reset-email renders as SELECT/CTE
+PASS: curious-2-password-reset-email renders as SELECT/CTE
+PASS: curious-2-user-by-prn renders as SELECT/CTE
+PASS: community-campus-user-lookup renders as SELECT/CTE
+PASS: community-campus-user-by-email renders as SELECT/CTE
+PASS: community-campus-user-by-name renders as SELECT/CTE
+PASS: curious-2-user-lookup renders as SELECT/CTE
+PASS: curious-2-user-by-email renders as SELECT/CTE
+PASS: curious-2-user-by-name renders as SELECT/CTE
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_36_query_library_execution_ux.py", line 23, in <module>
+    check('Query Library exposes trusted query action', 'Use trusted query →' in ui)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_36_query_library_execution_ux.py", line 12, in check
+    raise AssertionError(name)
+AssertionError: Query Library exposes trusted query action
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_37_trusted_query_investigation_evidence.py", line 110, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_37_trusted_query_investigation_evidence.py", line 45, in main
+    check("Stage 58.37+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 37)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_37_trusted_query_investigation_evidence.py", line 24, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.37+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_38_query_library_management_and_cleanup.py", line 109, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_38_query_library_management_and_cleanup.py", line 36, in main
+    check("Stage 58.38+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58."))
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_38_query_library_management_and_cleanup.py", line 31, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.38+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_39_final_closeout_and_blocker_remediation.py", line 46, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_39_final_closeout_and_blocker_remediation.py", line 21, in main
+    check("Stage 58.39+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 39)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_39_final_closeout_and_blocker_remediation.py", line 16, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.39+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_40_location_disambiguation_and_result_grid.py", line 87, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_40_location_disambiguation_and_result_grid.py", line 34, in main
+    check("Stage 58.40+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 40)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_40_location_disambiguation_and_result_grid.py", line 21, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.40+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_41_community_campus_combined_query_workflow.py", line 44, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_41_community_campus_combined_query_workflow.py", line 21, in main
+    check("Stage 58.41+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 41)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_41_community_campus_combined_query_workflow.py", line 16, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.41+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_42_manual_testing_remediation.py", line 102, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_42_manual_testing_remediation.py", line 35, in main
+    check("Stage 58.42+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 42)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_42_manual_testing_remediation.py", line 22, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.42+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_43_product_scope_and_course_attempts.py", line 100, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_43_product_scope_and_course_attempts.py", line 33, in main
+    check("Stage 58.43+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".",1)[-1]) >= 43)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_43_product_scope_and_course_attempts.py", line 23, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.43+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_44_community_campus_scope_and_results.py", line 88, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_44_community_campus_scope_and_results.py", line 34, in main
+    check("Stage 58.44+ version", STAGE == 58 and version_number >= 44)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_44_community_campus_scope_and_results.py", line 20, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.44+ version
+FAIL: Stage 58.45+ version
+PASS: Passwords are not stripped
+PASS: ODBC password and username are braced
+PASS: Closing braces are escaped
+PASS: Master remains explicit inventory anchor
+PASS: Internal Course ID is first
+PASS: Course history orders by internal ID
+PASS: Course history no longer orders by name
+PASS: Grid headings are friendly
+PASS: Grid booleans are Yes or No
+PASS: Grid missing values are explicit
+PASS: Non-applicable course fields are explicit
+PASS: Course dates omit fractional seconds
+PASS: Course grid uses course formatting
+PASS: Copied tables use displayed friendly headings
+Failed checks: Stage 58.45+ version
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_46_prn_role_routing.py", line 143, in <module>
+    main()
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_46_prn_role_routing.py", line 93, in main
+    check("Stage 58.46+ version", STAGE == 58 and APP_VERSION.startswith("0.8.0-stage58.") and int(APP_VERSION.rsplit(".", 1)[-1]) >= 46)
+  File "/tmp/cloud-eval-b02-run/tests/stage58/run_stage58_46_prn_role_routing.py", line 23, in check
+    raise AssertionError(name)
+AssertionError: Stage 58.46+ version
+PASS 51.11c-N01 NaT treated as unavailable
+PASS 51.11c-N02 pandas NA treated as unavailable
+PASS 51.11c-N03 NaN treated as unavailable
+PASS 51.11c-N04 None treated as unavailable
+PASS 51.11c-N05 blank text treated as unavailable
+PASS 51.11c-N06 Timestamp is not coerced to a numeric KPI
+PASS 51.11c-N07 valid number preserved
+PASS 51.11c-N08 missing scalar formats as unavailable
+PASS 51.11c-N09 client service desk analysis survives missing dates
+PASS 51.11c-N10 missing resolved dates do not create invalid resolution KPI
+PASS 51.11c-N11 full Preview build path completes with NaT dates
+PASS 51.11c-N12 no KPI contains NaT after build
+PASS 51.11c-N13 numeric KPIs remain finite or explicitly unavailable
+
+Stage 51.11c NaT/null-safety suite: 13/13 PASS
+Fontconfig error: No writable cache directories
+STAGE 52.17a PHASE A OUTPUT FIXES: 21/21 PASS
+PASS test_final_guided_sd_presentation_cleanup
+Stage 54.5 final cleanup tests passed: 1/1
+PASS | multiple concurrent sessions receive distinct IDs
+PASS | both in-progress sessions are listed
+PASS | session resumes same identity when auto-saved
+PASS | session state and current step persist
+PASS | completed workflow leaves In Progress list
+PASS | completed workflow remains persisted
+PASS | workflow deletion removes only selected session
+Stage 55.9 checks: 8/8 PASS
+PASS 51.7-T01 clear incident reconstructs one main episode
+PASS 51.7-T02 graph carries request across sources
+PASS 51.7-T03 blast radius confirms failed request
+PASS 51.7-T04 root cause inspectable
+PASS 51.7-T05 request pivot narrows integrated workspace
+PASS 51.7-T06 request pivot keeps directly relevant evidence
+PASS 51.7-T07 ambiguous 502 does not invent root cause
+PASS 51.7-T08 recovery evidence remains visible
+PASS 51.7-T09 same-time different requests stay distinct
+PASS 51.7-T10 blast does not collapse explicit request identities
+PASS 51.7-T11 missing timestamp evidence retained
+PASS 51.7-T12 missing timestamp remains inspectable
+PASS 51.7-T13 benign noise creates no confirmed impact
+PASS 51.7-T14 benign noise creates no root-cause claim
+PASS 51.7-T15 recovery does not erase confirmed impact
+PASS 51.7-T16 recovery is separate scope evidence
+PASS 51.7-T17 clock-skew/high-utilisation not promoted to saturation
+PASS 51.7-T18 unrelated healthy endpoint is not pulled into failed incident graph
+PASS 51.7-A01 linked identities avoid false conflict
+PASS 51.7-A02 relationship graph includes identity mapping
+PASS 51.7-A03 activity reconstruction spans both platforms
+PASS 51.7-A04 cross-source evidence inspectable
+PASS 51.7-A05 course pivot narrows investigation
+PASS 51.7-A06 course pivot keeps evidence provenance
+PASS 51.7-A07 contradictory outcomes surface conflict
+PASS 51.7-A08 conflict evidence remains inspectable
+PASS 51.7-A09 different course blocks weak correlation
+PASS 51.7-A10 duplicate copied rows do not yield confirmed independent evidence
+PASS 51.7-A11 strong identifier survives missing timestamp
+PASS 51.7-A12 missing-timestamp correlated evidence remains visible
+PASS 51.7-A13 contradictory users stay conflicting
+PASS 51.7-A14 interactive layer does not hide conflict
+PASS 51.7-A15 single source cannot determine cross-source reconciliation
+PASS 51.7-A16 no events gives Not found subject activity
+PASS 51.7-A17 no events gives Cannot determine cross-source
+PASS 51.7-A18 concurrent identities remain distinct graph users
+PASS 51.7-A19 request clusters remain per request
+PASS 51.7-S01 3k-event integrated investigation completes
+PASS 51.7-S02 1500 strong correlations retained
+PASS 51.7-S03 large graph remains structurally valid
+PASS 51.7-S04 workspace option maps remain stable
+PASS 51.7-B01 correlation window exact boundary remains eligible
+PASS 51.7-B02 correlation outside boundary is not linked
+PASS 51.7-B03 evidence references retain multiple source files
+PASS 51.7-B04 three-source strong evidence does not weaken confirmation
+PASS 51.7-B05 unrelated context is not confirmed impacted
+PASS 51.7-B06 repeated endpoint failures preserve three request entities
+PASS 51.7-B07 evidence graph node IDs stay unique under recurrence
+PASS 51.7-I01 sequential runs do not mutate prior investigation
+PASS 51.7-I02 workspace claim selection remains valid
+
+Stage 51.7 full investigation torture suite: 50/50 PASS
+Stage 56.7 checks: 9/9 PASS; 5000-line pipeline 2.19s
+PASS | Generated Reports has report library toolbar
+PASS | Generated Reports supports search
+PASS | Generated Reports supports sorting
+PASS | Generated history removal explicitly preserves original output file
+PASS | Generated report history exposes archive metadata
+PASS | Saved definitions support edit
+PASS | Saved definitions support duplicate
+PASS | Saved definitions support run with new data
+PASS | Saved definitions support search
+PASS | Advanced Builder has explicit local visibility gate
+PASS | New local profiles do not enable Advanced Builder by default
+PASS | Admin launch can always access Advanced Builder
+FAIL | Advanced Builder button is conditionally rendered
+PASS | Recent generated report returns removable id
+PASS | Generated history entry can be removed without file operation
+
+Current report libraries: 14/15 PASS
+PASS | dedicated Guided session table
+PASS | multiple session storage uses session id
+PASS | Reports In Progress uses dedicated sessions
+PASS | resume route uses Guided session adapter
+PASS | navigation away forces auto-save
+PASS | workflow state captures proposal state
+PASS | workflow deletion requires confirmation checkbox
+PASS | successful generation completes session
+PASS | Home final Nexus tagline retained
+PASS | Insights Together footer retained
+
+10/10 checks passed
+Local JSON state could not be decoded; using safe fallback. context=database_connections:file error_type=JSONDecodeError
+Local JSON state could not be decoded; using safe fallback. context=database_connections:file error_type=JSONDecodeError
+Local JSON state could not be decoded; using safe fallback. context=sla_profiles:file error_type=JSONDecodeError
+Local JSON state could not be decoded; using safe fallback. context=sla_profiles:file error_type=JSONDecodeError
+PASS: atomic JSON publishes valid replacement
+PASS: atomic JSON leaves no temp siblings
+PASS: atomic text publishes replacement
+PASS: failed export preserves prior output
+PASS: failed export cleans temporary file
+PASS: successful export atomically replaces output
+PASS: missing generated temporary output is rejected
+PASS: missing output failure leaves no destination
+PASS: corrupt database profile state falls back safely
+PASS: database profile save recovers with valid JSON
+PASS: corrupt SLA state falls back safely
+PASS: SLA profile save recovers with valid JSON
+RESULT: 12 passed, 0 failed
+PASS | dependency baseline schema
+PASS | core dependencies represented
+PASS | feature dependencies represented
+PASS | core dependency pins exact
+PASS | requirements exact pinned
+PASS | matching dependency set accepted
+PASS | core version mismatch blocked
+PASS | missing core dependency blocked
+PASS | feature-gated dependency may be absent at startup
+PASS | feature dependency blocks when explicitly required
+PASS | protected source has no blocking execution primitive
+PASS | os.system removed from protected code
+PASS | reviewed local opener does not create unresolved subprocess finding
+PASS | unexpected network capabilities absent
+PASS | runtime security summary reports no blockers
+PASS | runtime security summary has no unresolved review findings | 0
+PASS | host antimalware boundary explicit
+PASS | dependency baseline protected by release manifest
+PASS | requirements protected by release manifest
+PASS | workbook active content remains non-executing
+SUMMARY | 20/20 PASS
+PASS: current build has protected application files
+PASS: tests are not part of immutable code inventory
+PASS: mutable user-data directory is outside application code root
+PASS: clean release manifest verifies
+PASS: manifest verifies all protected fixture files
+PASS: modified protected code is detected
+PASS: deleted protected code is detected
+PASS: unexpected protected code is detected
+PASS: manifest/application version mismatch is detected
+PASS: missing release manifest is detected
+Current application integrity suite PASS
+FAIL | current Nexus version marker | 0.14.3-stage63.3K.3.43
+PASS | no blocking runtime security findings | 0
+PASS | no unresolved runtime security review findings | 0
+PASS | no unsafe dynamic imports remain
+PASS | no shell execution capability
+PASS | local opener accepts existing local file
+PASS | local opener rejects missing path
+PASS | local opener rejects protocol target https
+PASS | local opener rejects protocol target mailto
+PASS | local opener rejects protocol target file
+PASS | DPAPI forbids credential UI prompts
+PASS | DPAPI label uses Nexus identity
+PASS | strict base64 validation used for protected secret
+PASS | per-user app data permissions hardened best effort
+PASS | SQLite file permissions hardened best effort
+SUMMARY | 14/15 PASS
+PASS: static quality gate has no blocking findings
+PASS: runtime Python source inventory is substantial
+PASS: runtime source has no bare except handlers
+PASS: runtime source has no mutable default arguments
+PASS: runtime source has no shell=True subprocess calls
+PASS: source package contains no compiled Python artifacts
+PASS: large-function debt remains measured
+PASS: silent exception debt remains visible
+INFO: runtime Python files: 228
+INFO: runtime source lines: 107263
+INFO: review findings: 217
+INFO: silent exception handlers: 217
+INFO: functions >=200 lines: 50
+INFO: functions >=400 lines: 11
+INFO: largest function: 1183 lines
+Current static-quality suite PASS
+PASS | mock Ivanti connection succeeds
+PASS | real connector configuration fails safely when incomplete
+PASS | Meganexus Support open tickets are returned
+PASS | Meganexus Support Closed ticket is excluded
+PASS | other-team ticket is excluded
+PASS | defence-in-depth rejects an unexpected out-of-scope response
+PASS | scope breach fails closed without exposing provider totals
+PASS | pagination is enforced at provider boundary
+PASS | ticket list cannot request an unlimited dataset
+PASS | ticket detail requires ticket.read permission
+PASS | all write permissions are disabled
+PASS | no write operation is exposed by ServiceAgentOperations
+PASS | real query builder applies effective scope at source
+PASS | connection test does not retrieve tickets
+PASS | safe diagnostics omit fixture-sensitive values
+PASS | safe diagnostics prove scoped pagination
+PASS | Tkinter presentation calls Service Operations
+PASS | Service Agent uses shared theme for dark/light compatibility
+PASS | web-transition boundary is UI-neutral and reusable
+Stage 63.1 Ivanti/Service Agent: 19/19 PASS
+PASS | 1 raw mock provider data maps into Nexus domain
+PASS | 2 required primary fields project correctly
+PASS | 3 missing required mappings fail safely
+PASS | 4 missing optional mappings degrade safely
+PASS | 5 mapping diagnostics expose status not values
+PASS | 6 profile controls visible more-fields and hidden
+PASS | 7 read-only state is respected
+PASS | 8 resolution and cause-code condition activates without write
+PASS | 9 More Fields excludes unknown raw provider fields
+PASS | 10 detail uses Service Operations projection boundary
+PASS | 11 description content renders safely
+PASS | 12 long multiline content remains usable
+PASS | 13 synthetic attachment metadata is represented
+PASS | 14 synthetic activity is represented
+PASS | 15 master relationship is outside More Fields
+PASS | 16 Stage 63.1 scope enforcement remains active
+PASS | 17 Stage 63.1 pagination remains active
+PASS | 18 no Ivanti write operation is available
+PASS | 19 Safe Diagnostics remain redacted
+PASS | 20 Stage 62 and Stage 63 release regressions are registered
+PASS | 21 dark and light theme contracts are preserved
+Stage 63.2 Service Agent UX: 21/21 PASS
+PASS | 1 opening ticket creates a child tab
+PASS | 2 reopening selects existing ticket
+PASS | 3 duplicate ticket tabs are prevented
+PASS | 4 multiple ticket tabs coexist
+PASS | 5 ticket tabs close independently
+PASS | 6 Work Queue remains available
+PASS | 7 closing ticket does not close Service Agent
+PASS | 8 opening ticket does not create a desktop window
+PASS | 9 More Fields does not create a desktop window
+PASS | 10 Relationships does not create a desktop window
+PASS | 11 More Fields expands and collapses inline
+PASS | 12 customer display name maps provider domain projection
+PASS | 13 customer email maps provider domain projection
+PASS | 14 missing customer email fails safely
+PASS | 15 From participant maps correctly
+PASS | 16 To participant maps correctly
+PASS | 17 CC participant maps correctly
+PASS | 18 multiple CC participants are preserved
+PASS | 19 Reply-To maps correctly
+PASS | 20 conversation participants remain distinct from Customer
+PASS | 21 customer content renders safely
+PASS | 22 long multiline content remains usable
+PASS | 23 attachment metadata associates with synthetic message
+PASS | 24 unknown attachment relationship is not fabricated
+PASS | 25 core details are compact right-hand presentation
+PASS | 26 More Fields contains configured secondary fields
+PASS | 27 unknown raw fields are not exposed
+PASS | 28 Cause Code is not More Fields
+PASS | 29 Resolution is not More Fields
+PASS | 30 active ticket hides Resolution controls
+PASS | 31 conditional Resolution Cause Code remains supported
+PASS | 32 resolved ticket displays resolution information
+PASS | 33 Relationships render within ticket
+PASS | 34 synthetic Master Incident renders
+PASS | 35 synthetic no-master state renders
+PASS | 36 Activity is integrated into ticket workspace
+PASS | 37 Stage 63.1 effective scope still passes
+PASS | 38 source-scoped retrieval still passes
+PASS | 39 pagination search sorting regressions pass
+PASS | 40 no Ivanti write path exists
+PASS | 41 Safe Diagnostics remain redacted
+PASS | 42 customer participant values do not leak diagnostics
+PASS | 43 dark-mode contracts pass
+PASS | 44 light-mode contracts pass
+PASS | 45 Stage 62 regression remains registered
+PASS | 46 Stage 63.1 regression remains registered
+PASS | 47 original Stage 63.2 mapping security suite remains registered
+Stage 63.2A integrated workspace: 47/47 PASS
+PASS | 1 Ivanti REST API key mode exists
+PASS | 2 API-key Authorization begins exactly rest_api_key=
+PASS | 3 API-key mode does not use Bearer
+PASS | 4 generic bearer behaviour remains available
+PASS | 5 Accept JSON remains configured
+PASS | 6 secret is not persisted in plaintext
+PASS | 7 secret is absent from diagnostics
+PASS | 8 secret is absent from audit output
+PASS | 9 missing API key fails safely
+PASS | 10 normal connection UX hides endpoint complexity
+PASS | 11 advanced connection UX exposes technical settings
+PASS | 12 mappings have a dedicated configurable surface
+PASS | 13 configured mappings survive main UX
+PASS | 14 effective scope remains source-applied
+PASS | 15 test connection is health-only
+PASS | 16 mock mode continues to work
+PASS | 17 no Ivanti write path exists
+PASS | 18 no username resp or userId behaviour is added
+PASS | 19 UI supports dark and light theme contracts
+PASS | 20 protected settings do not expose the API key
+Stage 63.2B Ivanti connection UX: 20/20 PASS
+PASS | 1 Conversation is default ticket view
+PASS | 2 Activity is not beneath Conversation
+PASS | 3 Activity History is a ticket-level view
+PASS | 4 Attachments is a ticket-level view
+PASS | 5 messages remain separate objects
+PASS | 6 incoming direction is retained
+PASS | 7 direction has explicit visible text
+PASS | 8 sender name is supported
+PASS | 9 sender email is supported
+PASS | 10 multiple To recipients are supported
+PASS | 11 multiple CC recipients are supported
+PASS | 12 timestamps are retained
+PASS | 13 subjects are retained
+PASS | 14 message bodies render in protected text widget
+PASS | 15 message attachments remain associated
+PASS | 16 consolidated attachments include message attachments
+PASS | 17 unassociated attachments are not falsely linked
+PASS | 18 conversation and activity remain separate domain concepts
+PASS | 19 customer and organisation remain prominent
+PASS | 20 right metadata stays compact
+PASS | 21 More Fields remains inline
+PASS | 22 Resolution/Cause Code are outside More Fields
+PASS | 23 ticket pop-outs remain absent
+PASS | 24 ticket child tabs remain closable
+PASS | 25 Reply is non-writing disabled
+PASS | 26 master actions are non-writing disabled
+PASS | 27 effective scope enforcement remains active
+PASS | 28 activity mapping remains configurable
+PASS | 29 dark and light theme contracts remain active
+PASS | 30 no Ivanti write path exists
+PASS | 31 fixtures remain synthetic
+Stage 63.2C conversation workspace: 31/31 PASS
+Nexus test suite: stage58_closeout
+Stage 58 complete database-investigation feature gate plus current cross-product regression certification.
+Scripts: 65
+
+[1/65] stage58/run_stage58_1_database_investigation_foundation.py
+    FAIL (0.11s)
+
+[2/65] stage58/run_stage58_2_background_database_discovery.py
+    FAIL (0.11s)
+
+[3/65] stage58/run_stage58_3_structural_database_understanding.py
+    FAIL (0.10s)
+
+[4/65] stage58/run_stage58_4_data_profiling_semantic_understanding.py
+    FAIL (0.10s)
+
+[5/65] stage58/run_stage58_5_database_explorer_ux.py
+    FAIL (0.10s)
+
+[6/65] stage58/run_stage58_6_investigation_session_framework.py
+    FAIL (0.10s)
+
+[7/65] stage58/run_stage58_7_investigation_interpretation.py
+    FAIL (0.10s)
+
+[8/65] stage58/run_stage58_8_read_only_sql_safety.py
+    FAIL (0.10s)
+
+[9/65] stage58/run_stage58_9_sql_proposal_manual_workflow.py
+    FAIL (0.11s)
+
+[10/65] stage58/run_stage58_10_query_execution_result_viewer.py
+    FAIL (0.10s)
+
+[11/65] stage58/run_stage58_11_interactive_query_refinement.py
+    FAIL (0.10s)
+
+[12/65] stage58/run_stage58_12_cross_database_investigation.py
+    FAIL (0.14s)
+
+[13/65] stage58/run_stage58_13_saved_reusable_queries.py
+    FAIL (0.11s)
+
+[14/65] stage58/run_stage58_14_export_investigation_completion.py
+    FAIL (0.23s)
+
+[15/65] stage58/run_stage58_15_closeout_certification.py
+    FAIL (0.05s)
+
+[16/65] stage58/run_stage58_16_service_desk_reporting_remediation.py
+    FAIL (0.46s)
+
+[17/65] stage58/run_stage58_17_service_desk_report_polish.py
+    FAIL (0.54s)
+
+[18/65] stage58/run_stage58_18_server_discovery_foundation.py
+    FAIL (0.11s)
+
+[19/65] stage58/run_stage58_19_whole_server_structural_map.py
+    FAIL (0.12s)
+
+[20/65] stage58/run_stage58_20_background_deep_learning_scheduler.py
+    FAIL (0.13s)
+
+[21/65] stage58/run_stage58_21_dynamic_investigation_prioritisation.py
+    FAIL (0.11s)
+
+[22/65] stage58/run_stage58_22_server_wide_investigation_search.py
+    FAIL (0.11s)
+
+[23/65] stage58/run_stage58_23_progress_eta_discovery_ux.py
+    FAIL (0.11s)
+
+[24/65] stage58/run_stage58_24_server_change_detection.py
+    FAIL (0.11s)
+
+[25/65] stage58/run_stage58_25_scale_resilience_closeout.py
+    FAIL (0.11s)
+
+[26/65] stage58/run_stage58_26_sql_investigation_ux.py
+    FAIL (0.04s)
+
+[27/65] stage58/run_stage58_27_sql_investigation_staged_ux.py
+    FAIL (0.04s)
+
+[28/65] stage58/run_stage58_28_azure_sql_discovery_and_layout.py
+    FAIL (0.10s)
+
+[29/65] stage58/run_stage58_29_investigation_interpretation_refinement.py
+    FAIL (0.10s)
+
+[30/65] stage58/run_stage58_30_refinement_traversal_and_server_execution.py
+    FAIL (0.10s)
+
+[31/65] stage58/run_stage58_31_location_intelligence_and_disambiguation.py
+    FAIL (0.10s)
+
+[32/65] stage58/run_stage58_32_source_state_isolation.py
+    FAIL (0.10s)
+
+[33/65] stage58/run_stage58_33_server_inventory_scope_integrity.py
+    FAIL (0.10s)
+
+[34/65] stage58/run_stage58_34_investigation_hubs_and_location_sql.py
+    PASS (0.12s)
+
+[35/65] stage58/run_stage58_35_trusted_query_library.py
+    FAIL (0.10s)
+
+[36/65] stage58/run_stage58_36_query_library_execution_ux.py
+    FAIL (0.11s)
+
+[37/65] stage58/run_stage58_37_trusted_query_investigation_evidence.py
+    FAIL (0.11s)
+
+[38/65] stage58/run_stage58_38_query_library_management_and_cleanup.py
+    FAIL (0.10s)
+
+[39/65] stage58/run_stage58_39_final_closeout_and_blocker_remediation.py
+    FAIL (0.10s)
+
+[40/65] stage58/run_stage58_40_location_disambiguation_and_result_grid.py
+    FAIL (0.10s)
+
+[41/65] stage58/run_stage58_41_community_campus_combined_query_workflow.py
+    FAIL (0.11s)
+
+[42/65] stage58/run_stage58_42_manual_testing_remediation.py
+    FAIL (0.10s)
+
+[43/65] stage58/run_stage58_43_product_scope_and_course_attempts.py
+    FAIL (0.10s)
+
+[44/65] stage58/run_stage58_44_community_campus_scope_and_results.py
+    FAIL (0.11s)
+
+[45/65] stage58/run_stage58_45_connection_and_course_grid.py
+    FAIL (0.02s)
+
+[46/65] stage58/run_stage58_46_prn_role_routing.py
+    FAIL (0.10s)
+
+[47/65] run_stage51_11c_nat_safety.py
+    PASS (0.69s)
+
+[48/65] run_stage52_17a_phase_a_output_fixes.py
+    PASS (3.43s)
+
+[49/65] run_stage54_5_final_cleanup.py
+    PASS (1.21s)
+
+[50/65] run_stage55_4_guided_sessions.py
+    PASS (0.05s)
+
+[51/65] run_stage55_9_investigation_ux.py
+    PASS (0.40s)
+
+[52/65] run_stage51_7_full_investigation_torture.py
+    PASS (3.65s)
+
+[53/65] run_stage56_7_performance.py
+    PASS (2.59s)
+
+[54/65] current/run_current_report_libraries.py
+    FAIL (0.04s)
+
+[55/65] current/run_current_guided_session_integration.py
+    PASS (0.02s)
+
+[56/65] run_stage56_6_runtime_resilience.py
+    PASS (0.05s)
+
+[57/65] current/run_current_runtime_security.py
+    PASS (1.95s)
+
+[58/65] current/run_current_application_integrity.py
+    PASS (0.06s)
+
+[59/65] current/run_current_security_remediation.py
+    FAIL (2.01s)
+
+[60/65] current/run_current_static_quality.py
+    PASS (1.55s)
+
+[61/65] run_stage63_1_ivanti_service_agent.py
+    PASS (0.08s)
+
+[62/65] run_stage63_2_service_agent_ux.py
+    PASS (0.09s)
+
+[63/65] run_stage63_2a_integrated_workspace.py
+    PASS (0.11s)
+
+[64/65] run_stage63_2b_ivanti_connection_ux.py
+    PASS (0.09s)
+
+[65/65] run_stage63_2c_conversation_activity_attachments.py
+    PASS (0.11s)
+
+Suite complete: 18/65 scripts PASS in 23.69s
+Failures:
+- stage58/run_stage58_1_database_investigation_foundation.py
+- stage58/run_stage58_2_background_database_discovery.py
+- stage58/run_stage58_3_structural_database_understanding.py
+- stage58/run_stage58_4_data_profiling_semantic_understanding.py
+- stage58/run_stage58_5_database_explorer_ux.py
+- stage58/run_stage58_6_investigation_session_framework.py
+- stage58/run_stage58_7_investigation_interpretation.py
+- stage58/run_stage58_8_read_only_sql_safety.py
+- stage58/run_stage58_9_sql_proposal_manual_workflow.py
+- stage58/run_stage58_10_query_execution_result_viewer.py
+- stage58/run_stage58_11_interactive_query_refinement.py
+- stage58/run_stage58_12_cross_database_investigation.py
+- stage58/run_stage58_13_saved_reusable_queries.py
+- stage58/run_stage58_14_export_investigation_completion.py
+- stage58/run_stage58_15_closeout_certification.py
+- stage58/run_stage58_16_service_desk_reporting_remediation.py
+- stage58/run_stage58_17_service_desk_report_polish.py
+- stage58/run_stage58_18_server_discovery_foundation.py
+- stage58/run_stage58_19_whole_server_structural_map.py
+- stage58/run_stage58_20_background_deep_learning_scheduler.py
+- stage58/run_stage58_21_dynamic_investigation_prioritisation.py
+- stage58/run_stage58_22_server_wide_investigation_search.py
+- stage58/run_stage58_23_progress_eta_discovery_ux.py
+- stage58/run_stage58_24_server_change_detection.py
+- stage58/run_stage58_25_scale_resilience_closeout.py
+- stage58/run_stage58_26_sql_investigation_ux.py
+- stage58/run_stage58_27_sql_investigation_staged_ux.py
+- stage58/run_stage58_28_azure_sql_discovery_and_layout.py
+- stage58/run_stage58_29_investigation_interpretation_refinement.py
+- stage58/run_stage58_30_refinement_traversal_and_server_execution.py
+- stage58/run_stage58_31_location_intelligence_and_disambiguation.py
+- stage58/run_stage58_32_source_state_isolation.py
+- stage58/run_stage58_33_server_inventory_scope_integrity.py
+- stage58/run_stage58_35_trusted_query_library.py
+- stage58/run_stage58_36_query_library_execution_ux.py
+- stage58/run_stage58_37_trusted_query_investigation_evidence.py
+- stage58/run_stage58_38_query_library_management_and_cleanup.py
+- stage58/run_stage58_39_final_closeout_and_blocker_remediation.py
+- stage58/run_stage58_40_location_disambiguation_and_result_grid.py
+- stage58/run_stage58_41_community_campus_combined_query_workflow.py
+- stage58/run_stage58_42_manual_testing_remediation.py
+- stage58/run_stage58_43_product_scope_and_course_attempts.py
+- stage58/run_stage58_44_community_campus_scope_and_results.py
+- stage58/run_stage58_45_connection_and_course_grid.py
+- stage58/run_stage58_46_prn_role_routing.py
+- current/run_current_report_libraries.py
+- current/run_current_security_remediation.py

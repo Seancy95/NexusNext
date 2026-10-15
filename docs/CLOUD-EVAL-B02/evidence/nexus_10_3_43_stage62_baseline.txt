@@ -1,0 +1,271 @@
+PASS | Generated Reports has report library toolbar
+PASS | Generated Reports supports search
+PASS | Generated Reports supports sorting
+PASS | Generated history removal explicitly preserves original output file
+PASS | Generated report history exposes archive metadata
+PASS | Saved definitions support edit
+PASS | Saved definitions support duplicate
+PASS | Saved definitions support run with new data
+PASS | Saved definitions support search
+PASS | Advanced Builder has explicit local visibility gate
+PASS | New local profiles do not enable Advanced Builder by default
+PASS | Admin launch can always access Advanced Builder
+FAIL | Advanced Builder button is conditionally rendered
+PASS | Recent generated report returns removable id
+PASS | Generated history entry can be removed without file operation
+
+Current report libraries: 14/15 PASS
+PASS | dedicated Guided session table
+PASS | multiple session storage uses session id
+PASS | Reports In Progress uses dedicated sessions
+PASS | resume route uses Guided session adapter
+PASS | navigation away forces auto-save
+PASS | workflow state captures proposal state
+PASS | workflow deletion requires confirmation checkbox
+PASS | successful generation completes session
+PASS | Home final Nexus tagline retained
+PASS | Insights Together footer retained
+
+10/10 checks passed
+PASS | dependency baseline schema
+PASS | core dependencies represented
+PASS | feature dependencies represented
+PASS | core dependency pins exact
+PASS | requirements exact pinned
+PASS | matching dependency set accepted
+PASS | core version mismatch blocked
+PASS | missing core dependency blocked
+PASS | feature-gated dependency may be absent at startup
+PASS | feature dependency blocks when explicitly required
+PASS | protected source has no blocking execution primitive
+PASS | os.system removed from protected code
+PASS | reviewed local opener does not create unresolved subprocess finding
+PASS | unexpected network capabilities absent
+PASS | runtime security summary reports no blockers
+PASS | runtime security summary has no unresolved review findings | 0
+PASS | host antimalware boundary explicit
+PASS | dependency baseline protected by release manifest
+PASS | requirements protected by release manifest
+PASS | workbook active content remains non-executing
+SUMMARY | 20/20 PASS
+FAIL | current Nexus version marker | 0.14.3-stage63.3K.3.43
+PASS | no blocking runtime security findings | 0
+PASS | no unresolved runtime security review findings | 0
+PASS | no unsafe dynamic imports remain
+PASS | no shell execution capability
+PASS | local opener accepts existing local file
+PASS | local opener rejects missing path
+PASS | local opener rejects protocol target https
+PASS | local opener rejects protocol target mailto
+PASS | local opener rejects protocol target file
+PASS | DPAPI forbids credential UI prompts
+PASS | DPAPI label uses Nexus identity
+PASS | strict base64 validation used for protected secret
+PASS | per-user app data permissions hardened best effort
+PASS | SQLite file permissions hardened best effort
+SUMMARY | 14/15 PASS
+PASS: current build has protected application files
+PASS: tests are not part of immutable code inventory
+PASS: mutable user-data directory is outside application code root
+PASS: clean release manifest verifies
+PASS: manifest verifies all protected fixture files
+PASS: modified protected code is detected
+PASS: deleted protected code is detected
+PASS: unexpected protected code is detected
+PASS: manifest/application version mismatch is detected
+PASS: missing release manifest is detected
+Current application integrity suite PASS
+Stage 61.15.4 targeted regression: PASS
+PASS | CS-887 analyst answer is persisted
+PASS | identical CS-887 evidence does not re-prompt
+PASS | persisted CS-887 resolution is reused
+PASS | analyst answer survives refresh-state persistence
+PASS | changed Jira evidence can surface a new clarification
+PASS | month replacement explicitly preserves analyst answers
+Stage 61.15.6 SPI4 closeout regression: PASS
+PASS: current S1-S5 SLA targets
+PASS: Jira response windows match current S1-S5 targets
+PASS: P1/P2 are two working days
+PASS: P3/P4/P5 are five working days
+PASS: after hours normalises to 17:30
+PASS: before hours normalises to 08:00
+PASS: Saturday normalises to prior Friday 17:30
+PASS: Sunday normalises to Monday 08:00
+Stage 62.0B SPI4 contractual regression: PASS
+PASS: SPI4 contractual targets remain fixed
+PASS: SPI4 support window remains fixed
+PASS: SPI4 SLA module does not import Service Desk SLA profiles
+PASS: SPI4 SLA module documents isolation
+Stage 62.0B.1 SPI4 isolation contract passed.
+PASS | new-month pending state persists before sheet exists
+PASS | new-month analyst answer persists before sheet exists
+PASS | new-month pending answer is reusable
+PASS | CS-887 override survives non-material wording changes
+PASS | CS-887 stored resolution is reused
+PASS | Jira issue lookup reuses embedded changelog
+PASS | SPI4 UI reports per-ticket Jira progress
+PASS | new Jira month rebuilds SPI4 page after commit
+Stage 62.0B.2 SPI4 refresh lifecycle regression: PASS
+PASS: SPI4 search payload is reused; no redundant per-CS issue/comment requests for complete embedded evidence.
+PASS | operational settings survive reload
+PASS | database connection metadata survives reload
+PASS | connection change invalidates prior health
+PASS | connection health survives reload without secrets
+PASS | service desk SLA profile survives reload
+PASS | longitudinal month survives reload
+PASS | new-month pending refresh survives reload
+PASS | pending refresh clear is scoped to requested month
+PASS | successful persistent writes leave no .tmp siblings | []
+
+Stage 62.0C persistence/state: 9/9 PASS
+PASS: Organisation + Service is most-specific profile
+PASS: Service SLA overrides organisation/default
+PASS: Service working schedule overrides defaults
+PASS: Organisation wildcard profile is fallback
+PASS: Default profile remains fallback
+PASS: Profile matching tolerates export case/whitespace drift
+PASS: Weekend time excluded from working-hours SLA
+PASS: Excluded dates do not consume SLA
+Stage 62.0D Service Desk Monthly audit regression PASS
+PASS: SELECT remains allowed
+PASS: write/batch blocked: DELETE FROM x
+PASS: write/batch blocked: UPDATE x SET a=1
+PASS: write/batch blocked: SELECT * INTO y FROM
+PASS: write/batch blocked: EXEC sp_who
+PASS: write/batch blocked: SELECT 1; DELETE FRO
+PASS: SQL connections request driver-level read-only intent
+PASS: encrypted transport remains required
+PASS: case/whitespace equivalent profile cannot duplicate
+PASS: latest equivalent profile replaces prior definition
+PASS: profile name is normalised
+Stage 62.0E SQL/Connections contractual regression: PASS
+PASS: RIFT manual input follows active theme input background
+PASS: RIFT no longer hard-codes white manual input surface
+PASS: course reporting retains lastcourseaccess cache optimisation
+PASS: large-course runtime retains bounded/concurrent execution support
+PASS: RIFT retains resilient timeout handling
+PASS: Curious 2 routing explicitly includes User-DB
+PASS: Curious 1/VC2 routing explicitly excludes User-DB
+PASS: trusted Community Campus queries remain anchored to User-DB
+Stage 62.0F Course/RIFT/Community Campus audit: 8/8 passed
+PASS | Guided sessions are persisted in the common SQLite store
+PASS | Guided session reads/writes are scoped to the current user
+PASS | Guided payloads use safe JSON loading
+PASS | Current report-library regression remains part of Stage 62
+PASS | Current Guided session regression remains part of Stage 62
+PASS | Generated report history removal protects original output
+PASS | Saved definitions retain run-with-new-data coverage
+PASS | Navigation-away auto-save remains covered
+
+Stage 62.0G Log Analysis / Guided Reporting contract: 8/8 PASS
+PASS | Log investigation detail surfaces use semantic theme backgrounds
+PASS | Log investigation knowledge/conflict surfaces avoid fixed light-only fills
+PASS | Service Desk scope checkboxes use theme-safe active/select colours
+PASS | Community Campus neutral actions use semantic theme surfaces
+PASS | Community Campus QoQ neutral actions use semantic theme surfaces
+PASS | Guided-reporting status panels use semantic warning/error surfaces
+PASS | SPI4 workbook supports keyboard commit/cancel during cell editing
+PASS | Application retains central accessible ttk configuration
+
+Stage 62.0H UX / accessibility / theme contract: 8/8 PASS
+PASS: company data is prohibited from external AI
+PASS: credentials are prohibited from external AI
+PASS: Windows username is not POC authorization
+PASS: local owner field is not POC authorization
+PASS: SPI4 Jira rules are not generic Jira rules
+PASS: integration business rules are not shared by default
+PASS: POC integration access defaults to deny
+PASS: server-side authorization is required
+PASS: scoped RBAC is required
+PASS: privileged actions require audit
+PASS: server-side secret store required for POC
+PASS: hosted AI remains disabled by default
+PASS: hosted AI metadata-only default remains enabled
+PASS: RBAC vocabulary separates Jira read/create
+PASS: RBAC vocabulary separates Ivanti read/update
+PASS: network adapters remain explicit allowlist
+Stage 62.0I security/RBAC architecture regression: 16/16 PASS
+FAIL | Stage 62 certified application version
+PASS | all Stage 62 audit/closeout records present
+PASS | baseline retains run_stage62_0b_spi4_contract.py
+PASS | baseline retains run_stage62_0b1_spi4_isolation.py
+PASS | baseline retains run_stage62_0b2_spi4_refresh_lifecycle.py
+PASS | baseline retains run_stage62_0b3_spi4_jira_performance.py
+PASS | baseline retains run_stage62_0c_persistence_state.py
+PASS | baseline retains run_stage62_0d_service_desk_monthly.py
+PASS | baseline retains run_stage62_0e_sql_connections.py
+PASS | baseline retains run_stage62_0f_course_rift_cc.py
+PASS | baseline retains run_stage62_0g_log_guided_reporting.py
+PASS | baseline retains run_stage62_0h_ux_accessibility_theme.py
+PASS | baseline retains run_stage62_0i_security_rbac_architecture.py
+PASS | Stage 63+ company-data boundary retained
+PASS | Stage 63+ deny-by-default RBAC retained
+PASS | SPI4 Jira boundary retained
+PASS | README identifies certified Stage 62 baseline
+Stage 62.0J final certification contract: 16/17 PASS
+Nexus test suite: stage62_baseline
+Certified Stage 62 baseline gate used for Stage 62 closeout and Stage 63+ POC entry.
+Scripts: 19
+
+[1/19] current/run_current_report_libraries.py
+    FAIL (0.04s)
+
+[2/19] current/run_current_guided_session_integration.py
+    PASS (0.02s)
+
+[3/19] current/run_current_runtime_security.py
+    PASS (1.96s)
+
+[4/19] current/run_current_security_remediation.py
+    FAIL (1.97s)
+
+[5/19] current/run_current_application_integrity.py
+    PASS (0.07s)
+
+[6/19] run_stage61_15_4_spi4_service_profiles.py
+    PASS (0.39s)
+
+[7/19] run_stage61_15_6_spi4_closeout.py
+    PASS (0.40s)
+
+[8/19] run_stage62_0b_spi4_contract.py
+    PASS (0.06s)
+
+[9/19] run_stage62_0b1_spi4_isolation.py
+    PASS (0.03s)
+
+[10/19] run_stage62_0b2_spi4_refresh_lifecycle.py
+    PASS (0.39s)
+
+[11/19] run_stage62_0b3_spi4_jira_performance.py
+    PASS (0.06s)
+
+[12/19] run_stage62_0c_persistence_state.py
+    PASS (0.36s)
+
+[13/19] run_stage62_0d_service_desk_monthly.py
+    PASS (0.34s)
+
+[14/19] run_stage62_0e_sql_connections.py
+    PASS (0.15s)
+
+[15/19] run_stage62_0f_course_rift_cc.py
+    PASS (0.02s)
+
+[16/19] run_stage62_0g_log_guided_reporting.py
+    PASS (0.02s)
+
+[17/19] run_stage62_0h_ux_accessibility_theme.py
+    PASS (0.02s)
+
+[18/19] run_stage62_0i_security_rbac_architecture.py
+    PASS (0.05s)
+
+[19/19] run_stage62_0j_final_certification.py
+    FAIL (0.04s)
+
+Suite complete: 16/19 scripts PASS in 6.38s
+Failures:
+- current/run_current_report_libraries.py
+- current/run_current_security_remediation.py
+- run_stage62_0j_final_certification.py

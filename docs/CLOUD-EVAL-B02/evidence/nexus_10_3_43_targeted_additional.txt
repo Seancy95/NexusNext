@@ -1,0 +1,39 @@
+
+COMMAND python3 tests/run_nexus_reports_stage8_investigation_knowledge.py
+NEXUS REPORTS STAGE 8 INVESTIGATION KNOWLEDGE: PASS
+EXIT 0
+
+COMMAND python3 tests/run_stage53_3_workbook_trust.py
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/run_stage53_3_workbook_trust.py", line 111, in <module>
+    check('runtime version', 'stage53.' in APP_VERSION, APP_VERSION)
+  File "/tmp/cloud-eval-b02-run/tests/run_stage53_3_workbook_trust.py", line 30, in check
+    raise AssertionError(f'{name}: {detail}')
+AssertionError: runtime version: 0.14.3-stage63.3K.3.43
+EXIT 1
+
+COMMAND python3 tests/run_stage53_6_data_protection.py
+FAIL | runtime version | 0.14.3-stage63.3K.3.43
+PASS | bearer token redacted | Authorization: Bearer [REDACTED] password=[REDACTED] api_key=[REDACTED]
+PASS | password redacted | Authorization: Bearer [REDACTED] password=[REDACTED] api_key=[REDACTED]
+PASS | api key redacted | Authorization: Bearer [REDACTED] password=[REDACTED] api_key=[REDACTED]
+PASS | ordinary business text preserved
+PASS | public source metadata removes local path
+PASS | secure temp lives in application user-data area
+PASS | secure temp exists during work
+PASS | secure temp removed after work
+PASS | stale temporary data cleanup | 1
+PASS | source records are non-persistent by default
+PASS | learned knowledge persists without source-row copy
+PASS | templates are explicit retained artefacts
+PASS | generated reports have explicit managed retention policy
+PASS | AI context excludes source filename/path | {"purpose": "Create a proposed report definition. Do not calculate report results.", "user_request": "Summarise payroll structure", "audience": "Operational", "explicit_kpis": [], 
+PASS | AI context contains no row-value collection
+PASS | AI context explicitly declares metadata-only privacy
+PASS | profile DB has no generic raw-source table | favourite_templates,recent_reports,saved_reports,sqlite_sequence,user_permissions,user_profile
+PASS | operational log redacts password
+PASS | operational log redacts bearer token
+PASS | operational log is size bounded
+PASS | guided report uses managed temporary directory
+SUMMARY | 21/22 PASS
+EXIT 1

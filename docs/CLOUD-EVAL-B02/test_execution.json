@@ -1,0 +1,163 @@
+{
+  "assessment": "CLOUD-EVAL-B02",
+  "executed_at": "2026-10-15",
+  "environment": {
+    "host": "Linux 6.18.44 x86_64",
+    "python": "3.12.14",
+    "windows": false,
+    "powershell_available": false,
+    "pytest_available": false,
+    "network_policy": "Non-loopback socket connections denied by evidence/network_guard.py",
+    "network_guard_sha256": "cfb8f65fb2060ce058acdfbf8cf0d7752d39692c9a066f4c48724b3233be4376",
+    "dependencies": {
+      "pandas": "2.2.3",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.10.8",
+      "python-docx": "1.2.0",
+      "xlrd": "2.0.1",
+      "pyodbc": "Not installed",
+      "mysql-connector-python": "Not installed"
+    }
+  },
+  "common_original_nexus_environment": {
+    "PYTHONPATH": "/path/to/evidence-network-guard:/path/to/extracted-copy",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "LOCALAPPDATA": "a unique directory under /tmp for each group",
+    "MPLCONFIGDIR": "/tmp/cloud-eval-b02-mpl",
+    "source_under_test": "A disposable copy of the safely extracted archive; the preserved extraction and supplied ZIP were not modified"
+  },
+  "executions": [
+    {
+      "id": "archive-integrity",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Passed",
+      "command": "python3 -c 'from shared.application_integrity import verify_release_manifest; ...'",
+      "result": "231 protected files checked; valid=true; zero problems",
+      "exit_code": 0,
+      "evidence": "evidence/nexus_10_3_43_integrity.txt",
+      "limits": "Manifest signature status is unsigned-development-release; this verifies internal consistency, not publisher authenticity or Git provenance."
+    },
+    {
+      "id": "stage-10-3-43-targeted",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Passed",
+      "command": "python3 assessment wrapper invoking tests.test_stage10_3_43.test_quality_review_mixed_offsets_no_dt_failure and test_actual_guided_worker_generates_both_outputs",
+      "result": "2/2 test functions passed",
+      "exit_code": 0,
+      "evidence": "evidence/nexus_10_3_43_targeted.txt",
+      "limits": "pytest was unavailable, so the two plain test functions were invoked directly with temporary directories and a minimal monkeypatch-compatible object. Synthetic Linux execution is not Windows GUI verification."
+    },
+    {
+      "id": "stage58-closeout",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Failed",
+      "command": "python3 tests/run_nexus_tests.py stage58_closeout",
+      "result": "18/65 scripts passed; 47 failed",
+      "exit_code": 1,
+      "evidence": "evidence/nexus_10_3_43_stage58_closeout.txt",
+      "limits": "45 of 46 Stage 58 scripts failed mainly at obsolete APP_VERSION/STAGE assertions before feature behavior. In the included current regression set, 17/19 scripts passed; current report-libraries and security-remediation scripts failed. The suite name is not current certification evidence."
+    },
+    {
+      "id": "stage62-baseline",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Failed",
+      "command": "python3 tests/run_nexus_tests.py stage62_baseline",
+      "result": "16/19 scripts passed; 3 failed",
+      "exit_code": 1,
+      "evidence": "evidence/nexus_10_3_43_stage62_baseline.txt",
+      "limits": "The final certification script requires the exact historical Stage 62 version. Security remediation rejects the later 0.14.3 marker. The report-library static assertion no longer matches the UI source. Passing component scripts remain component evidence only."
+    },
+    {
+      "id": "reports-stage3",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Failed",
+      "command": "python3 tests/run_nexus_tests.py reports_stage3",
+      "result": "6/7 scripts passed; canonical Stage 2 architecture script failed",
+      "exit_code": 1,
+      "evidence": "evidence/nexus_10_3_43_reports_stage3.txt",
+      "limits": "The failing behavioral assertion showed canonical Average Resolution Time and Median Resolution Time values in Excel but not Word. This is a reporting-correctness limitation, not an environment block."
+    },
+    {
+      "id": "investigation-knowledge",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Passed",
+      "command": "python3 tests/run_nexus_reports_stage8_investigation_knowledge.py",
+      "result": "Dedicated investigation knowledge workflow passed",
+      "exit_code": 0,
+      "evidence": "evidence/nexus_10_3_43_targeted_additional.txt",
+      "limits": "Uses a temporary local SQLite database and synthetic entities; it does not test evaluator role separation."
+    },
+    {
+      "id": "workbook-trust",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Failed",
+      "command": "python3 tests/run_stage53_3_workbook_trust.py",
+      "result": "Failed at the first historical runtime-version assertion; behavioral checks did not run",
+      "exit_code": 1,
+      "evidence": "evidence/nexus_10_3_43_targeted_additional.txt",
+      "limits": "Source presence and test-file presence are not counted as successful workbook-trust behavior."
+    },
+    {
+      "id": "data-protection",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Failed",
+      "command": "python3 tests/run_stage53_6_data_protection.py",
+      "result": "21/22 checks passed; only the obsolete runtime-version assertion failed",
+      "exit_code": 1,
+      "evidence": "evidence/nexus_10_3_43_targeted_additional.txt",
+      "limits": "Passing pattern-based redaction, temporary-data and metadata-context checks do not establish complete disclosure safety."
+    },
+    {
+      "id": "external-review-sanitiser",
+      "system": "Nexus 10.3.43",
+      "classification": "Executed — Passed",
+      "command": "python3 tests/run_nexus_reports_stage10_3_10_external_review_sanitiser.py",
+      "result": "Synthetic DOCX/XLSX pseudonymisation package checks passed",
+      "exit_code": 0,
+      "evidence": "evidence/nexus_10_3_43_sanitiser.txt",
+      "limits": "Checks within-package alias consistency only; restoration, multi-round joins/chronology, collision audit and cross-investigation linkability were not tested."
+    },
+    {
+      "id": "nexus-next-portable",
+      "system": "Nexus Next",
+      "classification": "Executed — Passed",
+      "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+      "result": "47/47 tests passed in 0.026 seconds",
+      "exit_code": 0,
+      "evidence": "evidence/nexus_next_unittest.txt",
+      "limits": "Portable Linux unit tests cover contracts, controller/replay, evidence utilities, development IPC and Phase 0 fixtures. They do not verify Windows security, secure IPC, a real worker/model, CLOUD-EVAL or external access."
+    }
+  ],
+  "not_executed_or_blocked": [
+    {
+      "group": "Nexus 10.3.43 Windows GUI, DPAPI and OS integration",
+      "classification": "Environment Blocked",
+      "reason": "The assessment environment is Linux and has no PowerShell or Windows desktop."
+    },
+    {
+      "group": "Live SQL Server and MySQL/RIFT behavior",
+      "classification": "Environment Blocked",
+      "reason": "pyodbc and mysql-connector-python were not installed; production systems and company data were prohibited."
+    },
+    {
+      "group": "Live Jira, Ivanti and Moodle connectors",
+      "classification": "Not Executed",
+      "reason": "No production access, credentials or live company/customer data were permitted. Synthetic connector tests were used instead."
+    },
+    {
+      "group": "Hosted OpenAI provider",
+      "classification": "Not Executed",
+      "reason": "External model activation and internet requests were prohibited. Only local context construction and static/provider-boundary checks were assessed."
+    },
+    {
+      "group": "Remaining historical Nexus test scripts",
+      "classification": "Not Executed",
+      "reason": "The assessment selected the maintained suite registry, targeted current defect tests and benchmark-relevant components. Historical stage scripts outside those groups were not represented as current verification."
+    },
+    {
+      "group": "CLOUD-EVAL benchmark",
+      "classification": "Not Executed",
+      "reason": "The assignment prohibits implementing or executing the benchmark."
+    }
+  ]
+}

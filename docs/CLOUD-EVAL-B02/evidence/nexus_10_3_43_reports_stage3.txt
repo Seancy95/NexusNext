@@ -1,0 +1,69 @@
+NEXUS REPORTS STAGE 1 SEMANTIC REGRESSION: PASS
+NEXUS REPORTS STAGE 1 PERSISTENCE REGRESSION: PASS
+NEXUS REPORTS STAGE 1 UI RESPONSIVENESS REGRESSION: PASS
+Traceback (most recent call last):
+  File "/tmp/cloud-eval-b02-run/tests/run_nexus_reports_stage2_architecture.py", line 46, in <module>
+    assert metric.formatted_value in text, f"Word diverged: {metric.label}"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Word diverged: Average Resolution Time
+NEXUS REPORTS STAGE 3 WORKFLOW: PASS
+PASS | dependency baseline schema
+PASS | core dependencies represented
+PASS | feature dependencies represented
+PASS | core dependency pins exact
+PASS | requirements exact pinned
+PASS | matching dependency set accepted
+PASS | core version mismatch blocked
+PASS | missing core dependency blocked
+PASS | feature-gated dependency may be absent at startup
+PASS | feature dependency blocks when explicitly required
+PASS | protected source has no blocking execution primitive
+PASS | os.system removed from protected code
+PASS | reviewed local opener does not create unresolved subprocess finding
+PASS | unexpected network capabilities absent
+PASS | runtime security summary reports no blockers
+PASS | runtime security summary has no unresolved review findings | 0
+PASS | host antimalware boundary explicit
+PASS | dependency baseline protected by release manifest
+PASS | requirements protected by release manifest
+PASS | workbook active content remains non-executing
+SUMMARY | 20/20 PASS
+PASS: current build has protected application files
+PASS: tests are not part of immutable code inventory
+PASS: mutable user-data directory is outside application code root
+PASS: clean release manifest verifies
+PASS: manifest verifies all protected fixture files
+PASS: modified protected code is detected
+PASS: deleted protected code is detected
+PASS: unexpected protected code is detected
+PASS: manifest/application version mismatch is detected
+PASS: missing release manifest is detected
+Current application integrity suite PASS
+Nexus test suite: reports_stage3
+Nexus Reports Stage 3 workflow/lifecycle plus mandatory earlier contracts.
+Scripts: 7
+
+[1/7] run_nexus_reports_stage1_regression.py
+    PASS (1.77s)
+
+[2/7] run_nexus_reports_stage1_persistence.py
+    PASS (0.24s)
+
+[3/7] run_nexus_reports_stage1_responsiveness.py
+    PASS (0.21s)
+
+[4/7] run_nexus_reports_stage2_architecture.py
+    FAIL (1.23s)
+
+[5/7] run_nexus_reports_stage3_workflow.py
+    PASS (0.02s)
+
+[6/7] current/run_current_runtime_security.py
+    PASS (2.17s)
+
+[7/7] current/run_current_application_integrity.py
+    PASS (0.06s)
+
+Suite complete: 6/7 scripts PASS in 5.70s
+Failures:
+- run_nexus_reports_stage2_architecture.py
