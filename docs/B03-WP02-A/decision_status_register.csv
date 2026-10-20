@@ -1,0 +1,13 @@
+decision_id,subject,status,basis,dependent_activity,required_owner
+DEC-001,Unfavourable Nexus result permitted,Approved requirement,WP02-A assignment,All evaluation stages,Evaluation authority
+DEC-002,Implementation and benchmark prohibited in WP02-A,Approved requirement,WP02-A assignment,Current stopping condition,Architecture owner
+DEC-003,Same access and budget for Nexus and comparator,Approved requirement,WP02-A assignment,Experimental execution,Experimental-validity reviewer
+DEC-004,Paired scenario design,Proposed method,01_EVALUATION_SPECIFICATION.md,Scoring and statistics,Methodology reviewer
+DEC-005,Numerical acceptance thresholds,Proposed untested,03_SCORING_AND_VALUE_FRAMEWORK.md,WP02-B and evaluation freeze,Programme and statistics owners
+DEC-006,Minimum 40 controlled scenarios,Proposed untested,02_SCENARIO_AND_GROUND_TRUTH.md,Sample design,Statistics owner
+DEC-007,Hidden custody store and technology,Unresolved,05_INDEPENDENCE_AND_CONTAMINATION.md,Hidden scenario creation,Security and scenario authorities
+DEC-008,Named independent roles,Unresolved,05_INDEPENDENCE_AND_CONTAMINATION.md,Independent claim,Programme owner
+DEC-009,Comparator capability and gate,Proposed,04_COMPARATOR_SPECIFICATION.md,Comparator implementation,Comparator review panel
+DEC-010,Minimal WP02-B method subset,Proposed,07_MINIMAL_WP02_B_SCOPE.md,Product implementation,Architecture owner
+DEC-011,Hidden scenario set,Not Created,Stopping condition,Independent execution,Scenario authority
+DEC-012,Benchmark execution,Not Run,Stopping condition,Performance claims,Evaluation authority

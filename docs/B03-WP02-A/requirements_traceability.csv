@@ -1,0 +1,21 @@
+requirement_id,requirement,design_location,acceptance_evidence,current_status
+WP02A-OBJ,Test material investigative improvement without assuming Nexus wins,01 sections 1 and 3; 03 section 8,Frozen paired estimand and valid failure outcome,Specified; Not Tested
+WP02A-STAGES,Separate public specification development validation hidden freeze execution and scoring,01 section 2,Signed stage manifests,Proposed; Not Implemented
+WP02A-HIDDEN,Prevent technical and human ground-truth leakage,05 sections 1 through 5,ACL logs role assignments contamination tests,Proposed; controls Not Implemented
+WP02A-SCENARIOS,Varied realistic synthetic scenario families,02 section 1,Frozen sampling matrix and independent quality review,Proposed; scenarios Not Created
+WP02A-TRUTH,Protected truth includes scope findings evidence contradictions causal and observable limits,02 sections 2 and 3,Independently reviewed truth record,Specified; Not Created
+WP02A-NEGATIVE,Separate no-material and insufficient-evidence cases,02 section 4; 03 sections 2 and 6,At least 6 cases in each stratum under proposal,Proposed; Not Tested
+WP02A-COMPARATOR,Competent deterministic analytics comparator,04 sections 1 and 2,Golden capability fixtures and independent acceptance,Specified; Not Implemented
+WP02A-FAIR,Equivalent access opportunity and resource budget,01 section 4; 04 section 3,Fairness manifest and paired budget audit,Specified; Not Tested
+WP02A-SCORING,Objective correct incorrect and efficiency scoring,03 sections 1 through 5,Public rubric and event-level scorer tests,Proposed; Not Implemented
+WP02A-VALUE,Prospective material value framework and numerical thresholds,03 sections 3 through 8,Approved preregistration before development,Proposed and Untested
+WP02A-STATS,Scenario counts repeats effects and uncertainty justified,02 section 5; 03 section 7,Prospective power or precision analysis and clustered intervals,Proposed; Not Performed
+WP02A-GATES,Separate judgments and critical failure gates,01 section 1; 03 sections 3 and 8,Five signed judgments and zero-tolerance event ledger,Specified; Not Tested
+WP02A-COMP-REVIEW,Formal independent comparator review,04 sections 4 and 5,Owner review challenge log fixtures and freeze,Proposed; Not Performed
+WP02A-CONTAMINATION,Ownership storage revisions access freeze retirement and replacement,05 sections 2 through 5,Custody manifest access evidence and incident procedure,Proposed; Not Implemented
+WP02A-FAILURE,Structured failure analysis for every failed/inconclusive scenario,06 and failure_analysis_template.csv,Complete event records linked to scenario manifests,Specified; Not Tested
+WP02A-WP02B,Smallest prospective implementation scope,07 sections 1 through 8,Architecture approval and bounded open fixtures,Proposed; Not Authorised
+WP02A-RISKS,Report risks assumptions and unresolved decisions,08 all sections,Owner dispositions and decision revisions,Delivered for review
+WP02A-APPROVAL,Explicit approval gate for WP02-B,09 G01 through G15,Named approvals with evidence references,Pending; WP02-B Not Approved
+WP02A-TRACE,Requirement-to-evaluation traceability,requirements_traceability.csv,Independent completeness review,Delivered; Not Independently Verified
+WP02A-STOP,No implementation hidden set in workspace or benchmark execution,README; 01 section 7; 07 section 8; 09 progression decision,Repository inventory shows documentation only,Applied
