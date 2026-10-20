@@ -1,0 +1,69 @@
+test_id,category,contract,synthetic case,expected result,required assertion,authority boundary
+SER-001,Valid creation,InvestigationScope/1.0.0,Complete synthetic scope with approved metric periods sources and policy refs,ACCEPT as admitted scope and emit canonical bytes,Round trip is semantically identical and digest equals golden digest,Controller admission only
+SER-002,Valid creation,InvestigationBudget/1.0.0,All bounded dimensions and UTC validity supplied,ACCEPT immutable budget,Every dimension and unit survives canonical round trip,Policy/controller issuance only
+SER-003,Valid creation,RetrievalRequest/1.0.0,Registered synthetic operation within scope and budget,ACCEPT as proposed request only,Object remains non-executable without allow decision,Engine proposes only
+SER-004,Valid creation,AuthorisationDecision/1.0.0,Controller allows exact request digest within validity window,ACCEPT allow decision bound to exact request,Any request-byte mutation fails binding,Controller decides retrieval only
+SER-005,Valid creation,EvidenceRef/1.0.0,Available synthetic evidence with valid digest scope expiry and parent refs,ACCEPT local reference,Reference resolves and contains no source body,Evidence repository issues
+SER-006,Valid creation,ProposedFinding/1.0.0,Claim includes supporting and refuting refs qualification obligations and proposer,ACCEPT as proposed only,No accepted or publication state appears,Engine proposes only
+SER-007,Valid creation,VerificationResult/1.0.0,Independent verifier records supported outcome after all required checks,ACCEPT support result without final disposition,Proposal remains unaccepted,Verifier assesses support only
+SER-008,Valid creation,InvestigationOutcome/1.0.0,Controller records partial terminal outcome with unresolved question and complete refs,ACCEPT partial outcome,Terminal status does not imply finding acceptance,Controller assembles workflow result
+VAL-001,Mandatory fields,All,Omit schema_name,REJECT with REQUIRED_FIELD at schema_name,No domain object returned,Boundary validator
+VAL-002,Mandatory fields,All,Omit producer identity,REJECT with REQUIRED_FIELD at producer,Failure does not invent producer,Boundary validator
+VAL-003,Malformed input,All,Duplicate JSON key in input,REJECT with INVALID_JSON,No ambiguous parse or partial object,Decoder
+VAL-004,Malformed input,All,Invalid Unicode or non-finite JSON number,REJECT with NON_CANONICAL_VALUE,No canonical digest emitted,Canonical serializer
+VAL-005,Bounds,All,Object exceeds configured encoded-size limit,REJECT with SIZE_LIMIT,Failure output remains bounded,Boundary validator
+VAL-006,Chronology,EvidenceRef/1.0.0,Expiry precedes acquisition,REJECT with INVALID_CHRONOLOGY,Reference not admitted,Evidence validator
+VAL-007,Identifiers,All,Identifier exceeds limit or violates registered syntax,REJECT with INVALID_IDENTIFIER,No truncation or replacement,Boundary validator
+VAL-008,Enums,Hypothesis/1.0.0,State value accepted supplied,REJECT with INVALID_ENUM,No finding disposition can enter hypothesis state,State validator
+VAL-009,Canonical form,ProposedFinding/1.0.0,Same semantic object supplied with different key order,ACCEPT and emit identical canonical bytes/digest,Input ordering has no semantic effect,Canonical serializer
+VAL-010,Canonical form,All,Array declared as semantic set contains duplicate members,REJECT with DUPLICATE_MEMBER,No silent deduplication,Contract validator
+SCP-001,Scope,RetrievalRequest/1.0.0,Source outside admitted source domains,REJECT or controller DENY with SOURCE_OUT_OF_SCOPE,Dispatch spy records zero calls,Controller
+SCP-002,Scope,RetrievalRequest/1.0.0,Requested field outside approved field limit,REJECT or DENY with FIELD_OUT_OF_SCOPE,No result or evidence emitted,Controller
+SCP-003,Scope,RetrievalRequest/1.0.0,Period widens admitted period,REJECT or DENY with PERIOD_OUT_OF_SCOPE,No implicit scope revision,Controller
+SCP-004,Operation,RetrievalRequest/1.0.0,Free-form SQL URL or executable expression supplied,REJECT with PROHIBITED_PARAMETER,Payload is not interpreted or executed,Request validator
+SCP-005,Budget,RetrievalRequest/1.0.0,Worst-case charge exceeds remaining budget,DENY with BUDGET_EXCEEDED,No reservation dispatch result or evidence,Controller
+SCP-006,Expiry,RetrievalRequest/1.0.0,Request is expired,DENY with REQUEST_EXPIRED,No execution despite otherwise valid request,Controller
+SCP-007,Binding,AuthorisationDecision/1.0.0,Allowed request mutated after decision,REJECT execution with DECISION_BINDING_MISMATCH,No evidence and no charge,Connector revalidation
+SCP-008,Denial,RetrievalResult/1.0.0,Denied request is paired with evidence refs,REJECT with EVIDENCE_AFTER_DENIAL,Evidence repository admits nothing,Result validator
+LIN-001,Evidence,EvidenceRef/1.0.0,Digest differs from locally resolved bytes,REJECT with DIGEST_MISMATCH,Reference state cannot be available,Evidence validator
+LIN-002,Evidence,EvidenceRef/1.0.0,Required parent reference is absent,REJECT with MISSING_PARENT,No dangling lineage accepted,Evidence validator
+LIN-003,Evidence,EvidenceRef/1.0.0,Parent graph contains a cycle,REJECT with LINEAGE_CYCLE,No object in cycle admitted,Lineage validator
+LIN-004,Evidence,EvidenceRef/1.0.0,Derived evidence expiry is later than earliest parent expiry,REJECT with EXPIRY_EXTENSION,Expiry cannot be extended by derivation,Evidence validator
+LIN-005,Evidence,EvidenceRef/1.0.0,Derived classification is lower than parent without approved rule,REJECT with CLASSIFICATION_DOWNGRADE,Parent classification preserved,Classification validator
+LIN-006,Evidence,ProposedFinding/1.0.0,Supporting reference belongs to another scope,REJECT with EVIDENCE_SCOPE_MISMATCH,Finding remains uncreated,Finding validator
+LIN-007,Provenance,ProposedFinding/1.0.0,Proposer identity or component version missing,REJECT with MISSING_PROVENANCE,No anonymous proposal,Finding validator
+LIN-008,Provenance,InvestigationOutcome/1.0.0,Failure or denied action omitted from graph,REJECT with INCOMPLETE_PROVENANCE,Terminal record cannot hide material failure,Outcome validator
+AUT-001,Promotion,ProposedFinding/1.0.0,Payload includes accepted true or equivalent final disposition,REJECT with PROHIBITED_STATE,No accepted finding type is created,Finding validator
+AUT-002,Separation,VerificationRequest/1.0.0,Named verifier equals proposal producer,REJECT with SELF_VERIFICATION,No verification request admitted,Controller
+AUT-003,Separation,VerificationResult/1.0.0,Verifier equals proposal producer despite altered instance ID,REJECT with INDEPENDENCE_FAILURE,Logical producer lineage comparison cannot be bypassed,Verification validator
+AUT-004,Promotion,VerificationResult/1.0.0,Supported result requests automatic acceptance,REJECT unsupported field/transition with PROHIBITED_PROMOTION,Proposal remains pending/unaccepted,State validator
+AUT-005,Promotion,VerificationResult/1.0.0,Not-supported result requests final rejected-finding disposition,REJECT with PROHIBITED_PROMOTION,Support outcome is retained only if otherwise valid,State validator
+AUT-006,Promotion,VerificationResult/1.0.0,Unresolved result requests final unresolved-finding disposition,REJECT with PROHIBITED_PROMOTION,No final disposition record created,State validator
+AUT-007,Reporting,Any,Proposed or verified finding requests canonical report inclusion,REJECT with OUT_OF_SCOPE_TRANSITION,No report object or placement emitted,Public API/state validator
+AUT-008,Publication,Any,Payload requests artifact validation or publication,REJECT with OUT_OF_SCOPE_TRANSITION,No publication authority represented,Public API/state validator
+AUT-009,Revision,InvestigationScope/1.0.0,Revision widens scope without new controller admission,REJECT with UNAUTHORISED_SCOPE_REVISION,Prior revision remains immutable,Controller
+AUT-010,Budget,BudgetUsage/1.0.0,Duplicate charge for same action ID,REJECT with DUPLICATE_CHARGE,Remaining balance unchanged,Controller ledger
+VER-001,Same version,All,Version 1.0.0 object sent to component supporting 1.0.0,PROCESS only after full validation,No compatibility transform recorded because none occurred,Receiving component
+VER-002,Older to newer,All,Version 1.0.0 request sent to 1.1 component with registered 1.0-to-1.1 transform,TRANSFORM then validate and process,Original/transformed digests and transform ID recorded; meaning authority classification expiry and refs preserved,Compatibility registry
+VER-003,Older to newer,All,Older minor request has no registered transform,REJECT with UNSUPPORTED_VERSION,No inferred defaults or best-effort parse,Compatibility registry
+VER-004,Newer to older,All,Version 1.1 request sent to component supporting only 1.0,REJECT with UNSUPPORTED_VERSION by default,Unknown data is not dropped,Compatibility registry
+VER-005,Newer to older,All,Registered downgrade claims lossless but removes evidence reference,REJECT transform with SEMANTIC_LOSS,Original remains unprocessed,Compatibility validator
+VER-006,Major version,All,Version 2.0.0 object sent to 1.x component,REJECT with UNSUPPORTED_MAJOR,No fallback to nearest version,Compatibility registry
+VER-007,Required field added,RetrievalRequest,New version adds mandatory authority-relevant field absent from old object,REJECT unless explicit transform supplies value from authoritative source,No invented authority default,Compatibility validator
+VER-008,Required field removed,EvidenceRef,Transform removes classification or expiry field,REJECT with SEMANTIC_LOSS,Classification and expiry preserved exactly,Compatibility validator
+VER-009,Field reinterpreted,InvestigationBudget,Same field name changes units or meaning,REQUIRE major version; reject as incompatible if presented as minor,No unit conversion without registered major migration,Compatibility validator
+VER-010,Unknown fields,All,Unknown top-level field appears in supported major,REJECT with UNKNOWN_FIELD,No silent ignore,Contract validator
+VER-011,Extensions,All,Registered bounded extension with no authority/state/evidence effect,ACCEPT after extension-specific validation,Extension owner/schema/version recorded,Extension registry
+VER-012,Incompatible enumeration,VerificationResult,Unknown or future support outcome supplied,REJECT with INVALID_ENUM,No mapping to closest known outcome,Contract validator
+VER-013,Malformed version,All,Version is empty v1 1.0 latest negative or has leading zero,REJECT with MALFORMED_VERSION,No negotiation attempt,Version parser
+VER-014,Negotiation bypass,All,Payload advertises fallback list or requests validation disabled,REJECT with NEGOTIATION_BYPASS,Configured supported set is unchanged,Compatibility registry
+VER-015,Transformation lineage,All,Registered transform changes bytes but omits original digest or transform version,REJECT with MISSING_TRANSFORMATION_PROVENANCE,Transformed object not processed,Compatibility validator
+VER-016,Patch compatibility,All,1.0.1 patch declares non-semantic clarification and exact schema compatibility,PROCESS only when registry explicitly lists compatibility,No assumption based solely on patch number,Compatibility registry
+SAFE-001,Safe failure,All,Malformed payload contains synthetic secret sentinel,REJECT and return bounded ContractFailure,Sentinel absent from message logs and audit fields,Failure boundary
+SAFE-002,Safe failure,RetrievalResult/1.0.0,Provider times out after reservation,ACCEPT typed timeout result and governed charge/release only,No fabricated evidence and retry classification explicit,Connector/controller
+SAFE-003,Safe failure,RetrievalResult/1.0.0,Provider raises internal exception,RETURN INTERNAL_FAILURE without stack or source body,Audit correlation retained and authority not advanced,Failure boundary
+SAFE-004,Safe failure,All,Canonical serializer fails after structural validation,RETURN SERIALIZATION_FAILURE and discard object,No partial digest or authoritative record,Serialization boundary
+SAFE-005,Safe failure,InvestigationOutcome/1.0.0,Budget exhausts before mandatory evidence obtained,ACCEPT budget_exhausted or inconclusive outcome,No supported or accepted conclusion invented,Controller
+SAFE-006,Safe failure,VerificationResult/1.0.0,Required evidence is expired or inaccessible,ACCEPT unresolved only if all other fields valid or reject malformed result,No supported outcome permitted,Verifier/validator
+SAFE-007,Safe failure,All,Same invalid request replayed repeatedly,RETURN stable failure and enforce bounded audit/retry behavior,No unbounded logs work or changing authority,Boundary/controller
+SAFE-008,Safe failure,All,Unexpected field attempts to override classification scope role or validation policy,REJECT before domain processing,No override takes effect,Contract validator
