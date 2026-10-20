@@ -91,7 +91,7 @@ The method registry evaluates evidence against each hypothesis predicate:
 - **Revised:** new evidence requires a materially different prediction/scope; create a successor hypothesis and retain the original decision trail.
 - **Unresolved:** neither support nor rejection clauses are satisfied, including because evidence is inaccessible, partial, expired or conflicting.
 
-These are hypothesis states, not accepted findings. The planner may create a `ProposedFinding` only after the applicable sufficiency policy passes. The independent verifier issues acceptance/rejection/unresolved.
+These are hypothesis states, not accepted findings. The planner may create a `ProposedFinding` only after the applicable sufficiency policy passes. The independent verifier issues a verification decision; final accepted/rejected/unresolved finding-disposition authority remains blocked pending the decision in document 01 §5.1.
 
 ### 4.4 Loop prevention and stopping
 
@@ -119,7 +119,9 @@ Sufficiency is a decision table by claim type. A material explanatory finding mi
 
 ### 6.1 Scenario and evidence
 
-All names, records and values below are synthetic. Scenario policy `SYN-SD-2026-09 v1` defines “resolution performance” as both median elapsed business hours and resolution-SLA attainment for tickets resolved in the named month. It authorises comparison to the immediately preceding complete month for the same service population. Without that approved scoped definition, Baseline would request clarification.
+This is an **illustrative design walkthrough**, not an executed Nexus Next investigation and not evidence of successful deterministic investigation or general competence. “Selected,” “retrieved,” and “result” below describe the specified state transitions that a future implementation would need to reproduce. All names, records and values are synthetic. Scenario policy `SYN-SD-2026-09 v1` defines “resolution performance” as both median elapsed business hours and resolution-SLA attainment for tickets resolved in the named month. It authorises comparison to the immediately preceding complete month for the same service population. Without that approved scoped definition, Baseline would request clarification.
+
+Only the displayed aggregate counts support independent arithmetic recalculation. No row-level synthetic ticket fixture was supplied with PRE01. Consequently, the stated medians, ticket-to-incident links, chronology, team overlaps and planned-capacity evidence are scenario assertions that cannot be independently established from this document alone. A future test must provide frozen row-level fixtures and reference calculations before any corresponding finding can be independently verified.
 
 | EvidenceRef | Synthetic evidence |
 |---|---|
@@ -182,9 +184,22 @@ The highest-ranked next actions are P2 age/distribution analysis, incident trave
 | Carried | 5 | 2 (40.0%) | 30 | 5 (16.7%) |
 | New in month | 55 | 48 (87.3%) | 60 | 50 (83.3%) |
 
-Carried P2 tickets rose from 8.3% to 33.3% of P2 closures and account for 25 of September’s 35 P2 breaches. Applying September’s cohort-specific rates to August’s P2 cohort mix gives approximately 80.0% rather than the observed September 61.1%, showing that closure composition is the largest measured P2 contributor in this decomposition. The small decline among new P2 tickets remains material enough to investigate.
+Carried P2 tickets rose from 8.3% to 33.3% of P2 closures and account for 25 of September’s 35 P2 breaches. The previously reported 80.0% counterfactual was arithmetically wrong. Applying September’s cohort-specific rates to August’s P2 mix is:
 
-H3 becomes **supported** as an explanation of reported resolved-ticket performance. It does not mean operational service became worse by the same amount; clearing old work can be a positive operational action. This qualification is mandatory.
+`(5/60 × 5/30) + (55/60 × 50/60) = 0.7778`, or **77.8%**.
+
+Because a two-factor mix/rate decomposition depends on ordering, the corrected design uses the symmetric average of both orders:
+
+- August P2 actual: 50/60 = **83.3%**.
+- September mix with August cohort rates: `(30/90 × 2/5) + (60/90 × 48/55)` = **71.5%**.
+- August mix with September cohort rates: **77.8%** as above.
+- September P2 actual: 55/90 = **61.1%**.
+- Symmetric cohort-mix contribution: average of `(71.5 − 83.3)` and `(61.1 − 77.8)` = **−14.2 percentage points**.
+- Symmetric within-cohort rate contribution: average of `(77.8 − 83.3)` and `(61.1 − 71.5)` = **−8.0 percentage points**.
+
+The two contributions sum to the **−22.2-point** P2 decline. On this illustrative aggregate data, cohort mix accounts for approximately 64.1% and within-cohort rate changes 35.9% of the decline. The conclusion that cohort mix is the larger measured contributor still holds, but the within-cohort contribution is substantial and must not be minimised.
+
+H3 becomes **supported within the illustrative decision trace** as an explanation of reported resolved-ticket performance. It does not mean operational service became worse by the same amount; clearing old work can be a positive operational action. The substantial within-cohort contribution also requires follow-up. Both qualifications are mandatory, and row-level evidence is required before verification.
 
 Incident traversal now ranks above team segmentation: it has a registered explicit relationship and can distinguish an exceptional event from general queue effects. Team segmentation remains eligible.
 
@@ -232,17 +247,17 @@ No authorised registered operation can obtain the missing actual attendance/allo
 
 | Outcome | State | Evidence and permitted conclusion |
 |---|---|---|
-| September deterioration | Verification-ready proposal | E-TKT-AUG-01/E-TKT-SEP-01/E-SLA-01 establish median 9.0→14.5h and SLA 88.0%→72.2% for resolved tickets |
-| Priority mix | Verification-ready qualified proposal | Counterfactual supports only a small 1.3-point contribution; it is not the main explanation |
-| Older P2 backlog closure mix | Verification-ready qualified proposal | Carried share and breach concentration provide strong compositional evidence; finding must say this affects the resolved-ticket measure and may reflect backlog clearance |
-| Team Blue concentration | Verification-ready proposal | Full ticket evidence establishes concentration, not why it occurred |
-| Assignment-queue incident | Proposed as associated subset only | Link/timing evidence supports association; contradictions prevent primary-cause wording |
+| September deterioration | Illustrative proposal only | Displayed aggregates recalculate SLA 88.0%→72.2%; median 9.0→14.5h requires row-level fixture verification |
+| Priority mix | Illustrative qualified proposal | Displayed aggregates support only a small 1.3-point contribution under the stated fixed-order counterfactual; it is not the main explanation |
+| Older P2 backlog closure mix | Illustrative qualified proposal | Corrected symmetric decomposition gives −14.2 points mix and −8.0 points within-cohort rate; row-level evidence and method review are still required |
+| Team Blue concentration | Illustrative proposal only | Displayed aggregate assertion suggests concentration, but underlying ticket relationships were not supplied for independent verification |
+| Assignment-queue incident | Illustrative association candidate only | Link/timing assertions would support association if verified; contradictions prevent primary-cause wording |
 | Reduced planned capacity | Unresolved | E-STAFF-01 is incomplete proxy evidence; actual capacity/allocation unavailable |
 | SLA/config or registered timestamp defect | Rejected explanations | No relevant change/defect in the scoped authoritative snapshots; rejection is limited to registered checks |
 
-The final supported answer is: **September’s reported resolution deterioration was concentrated in P2 and Team Blue and was driven chiefly, in the measured decomposition, by a much larger share of older P2 backlog tickets being resolved. Priority mix explains little of the aggregate decline. A queue incident is associated with some breached tickets, but neither it nor reduced planned capacity is established as the root cause.**
+The illustrative candidate answer is: **September’s reported resolution deterioration appears concentrated in P2 and Team Blue. On the displayed P2 aggregates, a larger share of older backlog tickets is the larger of two measured contributors, while within-cohort performance also deteriorated materially. Priority mix explains little of the overall decline. A queue incident is associated with some breached tickets, but neither it nor reduced planned capacity is established as the root cause.**
 
-This remains a set of proposed findings. An independent verifier must reproduce the populations/calculations, resolve every reference, test the decomposition order and qualifications, inspect contradictory evidence, and issue decisions before any finding becomes accepted.
+This remains a set of illustrative proposed findings. An independent verifier would need the row-level fixture to reproduce populations, medians, relationships and chronology; independently recalculate every metric; test the symmetric decomposition and qualifications; resolve every reference; and inspect contradictory evidence. Final acceptance would additionally require the unresolved promotion authority decision. The walkthrough itself demonstrates neither execution nor generalisation.
 
 ### 6.10 Proposed canonical representation
 
@@ -262,6 +277,8 @@ Paths A, B, C and optional D use the same logical `InvestigationScope`, authoris
 | Reporting | Same canonical accepted findings, obligations and projection components | Narrative richness can differ but cannot affect scoring of evidence access or verification; verbosity is not analytical success |
 | Publication/security | Same classification, retention and publication gates | B/C external research requires a separate bounded gateway; this design does not activate it. D requires recorded local model/runtime/hardware configuration |
 
-The primary experimental factor is reasoning strategy: A uses the deterministic process in this document; B/C use the same external model configuration as specified by B01 with original/transformed synthetic representation; D uses its preregistered local configuration if included. Investigators/operators do not receive hidden truth or evaluation feedback.
+The primary experimental factor is reasoning strategy: A uses the deterministic process in this document; B/C use the same external model configuration as specified by B01 with original/transformed synthetic representation; D uses its preregistered local configuration if included. ARC-09-R01 makes the filtered external route the leading Enhanced research candidate while retaining a local LLM alternative; final production inference architecture remains unselected. Investigators/operators do not receive hidden truth or evaluation feedback.
 
 Before each comparison, an exposure-parity audit records evidence available, requested, returned and actually presented, plus suppressed/transformed fields and failed calls. A path cannot be credited with semantic improvement when it saw additional evidence, had more retrieval opportunities, used weaker verification, or received a different reporting foundation. When exact equality is impossible, the preregistered analysis states the confound, narrows the conclusion and may mark experimental validity Inconclusive rather than attributing the difference to reasoning.
+
+> **Generalisation warning:** No successful walkthrough, pilot or single synthetic run—including this one—may be cited as evidence of general investigative competence. That requires representative held-out scenario evaluation of correctness, decision quality, reliability, generalisation and verification integrity under preregistered acceptance rules.

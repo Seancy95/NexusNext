@@ -2,9 +2,11 @@
 
 ## 1. Governing boundary
 
-**Approved requirement:** Baseline is a deterministic investigation engine. Enhanced extends the same governed architecture with strictly local semantic interpretation and contextual reasoning. Baseline is defined by inspectable methods and decisions, not by the absence of an LLM. General statistical, anomaly, relationship, contradiction, hypothesis and multi-round capabilities belong to Baseline.
+**Approved requirement:** Baseline is a deterministic investigation engine. Enhanced extends the same governed architecture through semantic interpretation, contextual reasoning and adaptive investigative proposals. Baseline is defined by inspectable methods and decisions, not by the absence of an LLM. General statistical, anomaly, relationship, contradiction, hypothesis and multi-round capabilities belong to Baseline.
 
-Enhanced contributions are proposals. Enhanced cannot independently retrieve evidence, recalculate an authoritative metric when an approved deterministic calculation exists, approve knowledge, accept a finding, change canonical evidence, or bypass report/publication controls.
+The reasoning boundary is independent of model location. Under ARC-09-R01, the leading research candidate is local PII filtering and authorised disclosure control → external LLM reasoning → controlled local restoration → independent Nexus verification → canonical reporting. A locally hosted LLM remains an alternative; final production inference architecture is unselected. Neither path is implemented or authorised for company-data transmission by PRE01.
+
+Enhanced contributions are proposals. Regardless of location, Enhanced cannot independently retrieve evidence, receive credentials or identity mappings, recalculate an authoritative metric when an approved deterministic calculation exists, approve knowledge, accept a finding, change canonical evidence, restore identity outside the local governed boundary, or bypass report/publication controls.
 
 ## 2. Baseline-versus-Enhanced matrix
 
@@ -20,8 +22,12 @@ Enhanced contributions are proposals. Enhanced cannot independently retrieve evi
 | Hypothesis generation | Rules triggered by deviations, relationships, quality flags and known mechanisms | Novel explanations from terminology, narrative and context | Every hypothesis is non-authoritative | Trigger evidence, predictions, falsifiers and scope | Template bias or semantic speculation | Trace every hypothesis to triggers; adversarial omission and fabrication tests |
 | Follow-up selection | Eligibility gates and deterministic lexicographic ranking | Suggest operations or evidence that registered methods missed | Controller independently authorises; same budgets apply | Open gaps, predicted outcomes, cost and permissions | Value model can prefer measurable evidence over hard-to-measure context | Replay decision from frozen state; loop, denial and sensitivity tests |
 | Claim drafting | Deterministic claim templates with scope, value, evidence and qualification | Propose clearer contextual language and material implications | ProposedFinding plus verifier is shared | Sufficient cited evidence and contradictory context | Templates can be rigid; fluent language can overstate | Meaning-preservation and unsupported-claim tests |
-| Verification | Rule/calculation/reference checks plus independent substantive review | May challenge for missed meaning but cannot decide its own output | Independent verifier owns acceptance | Frozen proposal and locally resolvable evidence | Verification can share hidden assumptions with analysis | Role separation, counterevidence and adversarial acceptance tests |
+| Verification | Rule/calculation/reference checks plus independent substantive review | May challenge for missed meaning but cannot decide its own output | Independent verifier owns the verification decision; final finding-acceptance authority remains blocked pending document 01 §5.1 | Frozen proposal and locally resolvable evidence | Verification can share hidden assumptions with analysis | Role separation, counterevidence and adversarial acceptance tests |
 | Reporting | Canonical accepted findings and obligations projected through ARC-08 | Suggest composition and wording within accepted meaning | Canonical finding/obligation revisions remain authoritative | Verification decisions and projection lineage | Format loss or editorial strengthening | RCV/DEV against actual artifacts; cross-format value/qualification preservation |
+
+No matrix row claims implemented capability. It specifies available design methods and authority boundaries. A walkthrough using these methods establishes conceptual feasibility or specification coverage only.
+
+> **Generalisation warning:** Passing an individual method fixture, walkthrough or synthetic scenario does not demonstrate general investigative competence. That claim requires independent evaluation across representative and previously unseen scenario families, including irrelevant, contradictory, incomplete and adversarial evidence.
 
 ## 3. Method contract common to all entries
 
@@ -75,8 +81,10 @@ Every method has a stable ID/version, declared mathematical assumptions, accepte
 | M17 | Claim-type policy approved; verifier remains independent | Overstrict policy blocks useful claims; weak policy permits unsupported claims | Mandatory-clause tests; missing/contradicted/expired evidence fails or qualifies predictably | Yes: recommend missing contextual checks; cannot waive clauses |
 | M18 | Controller enforces authority/budget; planner only proposes | Poor policy tiers, stale value estimate, loops, unreachable source | Frozen-state replay, stable tie-break, denial, retry/loop and budget tests | Yes: propose additional candidates; common eligibility/ranking applies |
 | M19 | Claim-strength vocabulary from ARC-11; exact consolidation pending | Vague caveats, qualifier loss, numeric confidence misuse | Required qualification survives proposal/report projection; state distinctions tested | Yes: draft context-sensitive caveats, checked for meaning preservation |
-| M20 | Materiality and obligations do not equal verification; only verifier accepts | Cherry-picking, omitted minority finding, overstated prose | Unsupported claim rejected; positive/negative findings and mandatory obligations preserved | Yes: propose richer business meaning and wording; same verification gate |
+| M20 | Materiality and obligations do not equal verification; the method cannot accept its finding and final disposition authority remains unresolved | Cherry-picking, omitted minority finding, overstated prose | Unsupported claim receives a not-supported verification outcome; positive/negative proposals and mandatory obligations preserved | Yes: propose richer business meaning and wording; same verification gate |
 
 ## 6. Statistical governance
 
 Method registrations must declare sampling unit, population/cohort construction, missing-data treatment, independence/exchangeability assumptions, repeated-measure structure, effect-size definition, uncertainty method, multiplicity handling, minimum data, deterministic seed where relevant, and invalid-assumption behavior. Exploratory analysis is labelled. Repeated observations are not independent units. A statistically unusual change is not a causal result. Numerical thresholds, materiality tiers and acceptable false-positive/false-negative bounds remain unresolved until approved for each use or preregistered benchmark category.
+
+Method-level correctness and contract conformance must be reported separately from end-to-end investigative competence. Reliable demonstration requires preregistered scenario sampling, held-out cases, repeat runs where applicable, error/event reporting and uncertainty at the scenario—not merely assertion—level.
