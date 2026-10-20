@@ -34,6 +34,8 @@ class TransitionDecision:
     from_state: str
     to_state: str
     authorised_by: str
+    asserted_actor_role: str
+    effective_actor_role: str
 
 
 def validate_retrieval_request(
@@ -133,4 +135,6 @@ def request_transition(
         from_state=source,
         to_state=target,
         authorised_by=actor_role,
+        asserted_actor_role=actor_role,
+        effective_actor_role=actor_role,
     )

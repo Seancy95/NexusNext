@@ -25,6 +25,8 @@ from .validation import (
 )
 from .versioning import CompatibilityRegistry, TransformationRecord, Version
 
+DEFAULT_SCHEMA_VERSION = "1.0.0"
+
 COMMON_REQUIRED = {
     "schema_name", "schema_version", "object_id", "revision", "created_at",
     "producer", "correlation_id", "parent_refs", "classification", "payload",
@@ -80,7 +82,7 @@ def _validate_ref_list(value: Any, path: str, *, min_items: int = 0) -> None:
         seen.add(key)
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True, slots=True, init=False)
 class BaseContract:
     schema_name: str
     schema_version: str
@@ -97,6 +99,10 @@ class BaseContract:
     SCHEMA_NAME: ClassVar[str] = "BaseContract"
     PAYLOAD_REQUIRED: ClassVar[set[str]] = set()
     PAYLOAD_OPTIONAL: ClassVar[set[str]] = set()
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        del args, kwargs
+        raise TypeError("Contracts must be created through from_mapping() or load_contract()")
 
     @classmethod
     def from_mapping(
@@ -116,7 +122,13 @@ class BaseContract:
         exact_keys(prepared, COMMON_REQUIRED, set(), "$")
         if prepared["schema_name"] != cls.SCHEMA_NAME:
             fail("SCHEMA_MISMATCH", "$.schema_name", "Schema does not match contract type")
-        Version.parse(prepared["schema_version"])
+        incoming = Version.parse(prepared["schema_version"])
+        if compatibility is None:
+            receiver = Version.parse(receiver_version)
+            if receiver_version != DEFAULT_SCHEMA_VERSION or prepared["schema_version"] != receiver_version:
+                if incoming.major != receiver.major:
+                    fail("UNSUPPORTED_MAJOR", "$.schema_version", "Unsupported contract major version")
+                fail("UNSUPPORTED_VERSION", "$.schema_version", "Version is not explicitly supported")
         identifier(prepared["object_id"], "$.object_id")
         integer(prepared["revision"], "$.revision", minimum=1)
         timestamp(prepared["created_at"], "$.created_at")
@@ -127,19 +139,23 @@ class BaseContract:
         payload = mapping(prepared["payload"], "$.payload")
         exact_keys(payload, cls.PAYLOAD_REQUIRED, cls.PAYLOAD_OPTIONAL, "$.payload")
         cls._validate_payload(payload, prepared)
-        return cls(
-            schema_name=prepared["schema_name"],
-            schema_version=prepared["schema_version"],
-            object_id=prepared["object_id"],
-            revision=prepared["revision"],
-            created_at=prepared["created_at"],
-            producer=deep_freeze(prepared["producer"]),
-            correlation_id=prepared["correlation_id"],
-            parent_refs=deep_freeze(prepared["parent_refs"]),
-            classification=prepared["classification"],
-            payload=deep_freeze(payload),
-            transformation=transformation,
-        )
+        instance = object.__new__(cls)
+        values = {
+            "schema_name": prepared["schema_name"],
+            "schema_version": prepared["schema_version"],
+            "object_id": prepared["object_id"],
+            "revision": prepared["revision"],
+            "created_at": prepared["created_at"],
+            "producer": deep_freeze(prepared["producer"]),
+            "correlation_id": prepared["correlation_id"],
+            "parent_refs": deep_freeze(prepared["parent_refs"]),
+            "classification": prepared["classification"],
+            "payload": deep_freeze(payload),
+            "transformation": transformation,
+        }
+        for field, value in values.items():
+            object.__setattr__(instance, field, value)
+        return instance
 
     @classmethod
     def _validate_payload(cls, payload: Mapping[str, Any], raw: Mapping[str, Any]) -> None:
@@ -342,6 +358,12 @@ class EvidenceRef(BaseContract):
 
 
 class Hypothesis(BaseContract):
+    """A provisional investigation hypothesis, never an accepted finding.
+
+    ``supported``, ``rejected`` and ``unresolved`` describe the investigation
+    engine's current treatment of a hypothesis.  They do not represent
+    independent verification, finding disposition or report authority.
+    """
     SCHEMA_NAME = "Hypothesis"
     PAYLOAD_REQUIRED = {
         "scope_id", "statement", "trigger_refs", "predictions", "support_requirements", "falsifiers",

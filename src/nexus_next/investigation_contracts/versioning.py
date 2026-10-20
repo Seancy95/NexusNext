@@ -78,13 +78,15 @@ class CompatibilityRegistry:
             payload.setdefault("extensions", {})
             transformed["payload"] = payload
             transformed["schema_version"] = "1.0.0"
-            return transformed, TransformationRecord(
+            record = TransformationRecord(
                 transform_id="retrieval-request-0.9-to-1.0",
                 source_version="0.9.0",
                 target_version="1.0.0",
                 original_digest=hashlib.sha256(canonical_bytes(mapping)).hexdigest(),
                 transformed_digest=hashlib.sha256(canonical_bytes(transformed)).hexdigest(),
             )
+            validate_transformation_preservation(mapping, transformed)
+            return transformed, record
         if incoming.major != receiver.major:
             fail("UNSUPPORTED_MAJOR", "$.schema_version", "Unsupported contract major version")
         fail("UNSUPPORTED_VERSION", "$.schema_version", "No registered compatibility transformation")
@@ -95,16 +97,15 @@ def validate_transformation_preservation(
 ) -> None:
     """Reject compatibility transforms that lose governed meaning or lineage."""
 
-    for field in ("classification", "parent_refs", "object_id", "revision", "correlation_id"):
+    for field in (
+        "schema_name", "classification", "parent_refs", "object_id", "revision",
+        "correlation_id", "created_at", "producer",
+    ):
         if original.get(field) != transformed.get(field):
             fail("SEMANTIC_LOSS", f"$.{field}", "Transformation changed protected contract meaning")
     original_payload = original.get("payload")
     transformed_payload = transformed.get("payload")
     if isinstance(original_payload, Mapping) and isinstance(transformed_payload, Mapping):
-        protected = {
-            key for key in original_payload
-            if "evidence" in key or "classification" in key or "expir" in key or key.endswith("_refs")
-        }
-        for key in protected:
+        for key in original_payload:
             if original_payload.get(key) != transformed_payload.get(key):
-                fail("SEMANTIC_LOSS", f"$.payload.{key}", "Transformation lost protected evidence semantics")
+                fail("SEMANTIC_LOSS", f"$.payload.{key}", "Transformation changed existing contract meaning")
