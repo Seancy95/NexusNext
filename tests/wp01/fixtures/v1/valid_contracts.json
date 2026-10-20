@@ -1,0 +1,487 @@
+{
+  "AuthorisationDecision": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "authorisationdecision-1",
+    "parent_refs": [],
+    "payload": {
+      "budget_id": "budget-1",
+      "constraints": [
+        "synthetic_only"
+      ],
+      "decision": "allow",
+      "policy_revision": "policy-1",
+      "reason_code": "within_scope",
+      "request_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "request_id": "retrievalrequest-1",
+      "request_revision": 1,
+      "scope_id": "investigationscope-1",
+      "valid_until": "2030-01-02T00:00:00Z"
+    },
+    "producer": {
+      "component": "controller-component",
+      "instance_id": "controller-instance-1",
+      "role": "controller",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "AuthorisationDecision",
+    "schema_version": "1.0.0"
+  },
+  "BudgetUsage": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "budgetusage-1",
+    "parent_refs": [],
+    "payload": {
+      "budget_id": "budget-1",
+      "entries": [
+        {
+          "action_id": "action-1",
+          "amount": 1,
+          "dimension": "retrievals",
+          "kind": "charge",
+          "timestamp": "2030-01-01T00:00:00Z"
+        }
+      ],
+      "remaining": {
+        "retrievals": 3
+      },
+      "terminal": false
+    },
+    "producer": {
+      "component": "controller-component",
+      "instance_id": "controller-instance-1",
+      "role": "controller",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "BudgetUsage",
+    "schema_version": "1.0.0"
+  },
+  "ContractFailure": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "contractfailure-1",
+    "parent_refs": [],
+    "payload": {
+      "boundary": "contract-validator",
+      "category": "validation",
+      "code": "INVALID_INPUT",
+      "field_path": "$.payload",
+      "policy_revision": "policy-1",
+      "public_message": "Synthetic contract validation failed",
+      "related_digest": null,
+      "related_object_id": null,
+      "retryable": false
+    },
+    "producer": {
+      "component": "validator-component",
+      "instance_id": "validator-instance-1",
+      "role": "validator",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "ContractFailure",
+    "schema_version": "1.0.0"
+  },
+  "EvidenceRef": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "evidenceref-1",
+    "parent_refs": [],
+    "payload": {
+      "access_state": "available",
+      "acquired_at": "2030-01-01T00:00:00Z",
+      "completeness": "complete",
+      "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "digest_algorithm": "sha256",
+      "evidence_id": "evidence-1",
+      "evidence_type": "synthetic_summary",
+      "expires_at": "2030-01-02T00:00:00Z",
+      "lineage_parents": [],
+      "record_locator": "summary:2026-09",
+      "scope_id": "scope-1",
+      "snapshot_id": "snapshot-1",
+      "source_id": "synthetic-service-desk"
+    },
+    "producer": {
+      "component": "repository-component",
+      "instance_id": "repository-instance-1",
+      "role": "repository",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "EvidenceRef",
+    "schema_version": "1.0.0"
+  },
+  "Hypothesis": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "hypothesis-1",
+    "parent_refs": [],
+    "payload": {
+      "confounders": [
+        "population definition change"
+      ],
+      "evidence_gaps": [],
+      "falsifiers": [
+        "September rate is not below August"
+      ],
+      "materiality": "medium",
+      "predecessor": null,
+      "predictions": [
+        "September rate is below August"
+      ],
+      "scope_id": "scope-1",
+      "state": "open",
+      "statement": "September attainment is lower",
+      "support_requirements": [
+        "two period summaries"
+      ],
+      "trigger_refs": [
+        {
+          "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "evidence_id": "evidence-1",
+          "revision": 1,
+          "scope_id": "scope-1"
+        }
+      ]
+    },
+    "producer": {
+      "component": "engine-component",
+      "instance_id": "engine-instance-1",
+      "role": "engine",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "Hypothesis",
+    "schema_version": "1.0.0"
+  },
+  "InvestigationBudget": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "investigationbudget-1",
+    "parent_refs": [],
+    "payload": {
+      "effective_at": "2030-01-01T00:00:00Z",
+      "expires_at": "2030-01-02T00:00:00Z",
+      "max_elapsed_seconds": 60,
+      "max_evidence_bytes": 4096,
+      "max_operator_interventions": 0,
+      "max_retries": 1,
+      "max_retrievals": 4,
+      "max_rounds": 3,
+      "policy_revision": "policy-1",
+      "scope_id": "scope-1"
+    },
+    "producer": {
+      "component": "policy-component",
+      "instance_id": "policy-instance-1",
+      "role": "policy",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "InvestigationBudget",
+    "schema_version": "1.0.0"
+  },
+  "InvestigationOutcome": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "investigationoutcome-1",
+    "parent_refs": [],
+    "payload": {
+      "budget_usage_id": "budgetusage-1",
+      "configuration_versions": {
+        "contract_registry": "1.0.0"
+      },
+      "decision_refs": [
+        "authorisationdecision-1"
+      ],
+      "evidence_refs": [
+        {
+          "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "evidence_id": "evidence-1",
+          "revision": 1,
+          "scope_id": "scope-1"
+        }
+      ],
+      "failure_refs": [],
+      "hypothesis_refs": [
+        "hypothesis-1"
+      ],
+      "proposal_refs": [
+        "proposedfinding-1"
+      ],
+      "retrieval_refs": [
+        "retrievalresult-1"
+      ],
+      "scope_id": "scope-1",
+      "terminal_reason": "bounded_fixture_complete",
+      "terminal_status": "partial",
+      "unresolved_questions": [
+        "final disposition authority"
+      ],
+      "verification_refs": [
+        "verificationresult-1"
+      ]
+    },
+    "producer": {
+      "component": "controller-component",
+      "instance_id": "controller-instance-1",
+      "role": "controller",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "InvestigationOutcome",
+    "schema_version": "1.0.0"
+  },
+  "InvestigationScope": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "investigationscope-1",
+    "parent_refs": [],
+    "payload": {
+      "ambiguities": [],
+      "audience": [
+        "reviewer"
+      ],
+      "entities": [
+        "ticket_id"
+      ],
+      "knowledge_snapshot": "knowledge-1",
+      "metrics": [
+        "sla_attainment"
+      ],
+      "objective": "Compare September with August",
+      "obligations": [
+        "show_denominator"
+      ],
+      "operation_classes": [
+        "retrieve.summary"
+      ],
+      "periods": [
+        "2026-08",
+        "2026-09"
+      ],
+      "policy_revision": "policy-1",
+      "populations": [
+        "resolved_tickets"
+      ],
+      "request_ref": "local:question-1",
+      "source_domains": [
+        "synthetic-service-desk"
+      ],
+      "status": "admitted"
+    },
+    "producer": {
+      "component": "controller-component",
+      "instance_id": "controller-instance-1",
+      "role": "controller",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "InvestigationScope",
+    "schema_version": "1.0.0"
+  },
+  "ProposedFinding": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "proposedfinding-1",
+    "parent_refs": [],
+    "payload": {
+      "calculation_refs": [
+        "calculation-1"
+      ],
+      "claim": "September SLA attainment was lower than August",
+      "claim_strength": "observation",
+      "lifecycle": "proposed",
+      "materiality": "medium",
+      "obligations": [
+        "show denominator"
+      ],
+      "qualifications": [
+        "synthetic fixture only"
+      ],
+      "refuting_refs": [],
+      "scope_id": "scope-1",
+      "supporting_refs": [
+        {
+          "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "evidence_id": "evidence-1",
+          "revision": 1,
+          "scope_id": "scope-1"
+        }
+      ]
+    },
+    "producer": {
+      "component": "engine-component",
+      "instance_id": "engine-instance-1",
+      "role": "engine",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "ProposedFinding",
+    "schema_version": "1.0.0"
+  },
+  "RetrievalRequest": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "retrievalrequest-1",
+    "parent_refs": [],
+    "payload": {
+      "budget_id": "budget-1",
+      "byte_limit": 4096,
+      "evidence_requirement": "period summary",
+      "expires_at": "2030-01-02T00:00:00Z",
+      "field_limits": [
+        "sla_attainment",
+        "ticket_id"
+      ],
+      "idempotency_key": "request-key-1",
+      "operation": "retrieve.summary",
+      "operation_version": "1.0.0",
+      "parameters": {
+        "period": "2026-09"
+      },
+      "population_limit": 100,
+      "purpose": "Compare periods",
+      "scope_id": "investigationscope-1",
+      "source_id": "synthetic-service-desk",
+      "worst_case_charge": 1
+    },
+    "producer": {
+      "component": "engine-component",
+      "instance_id": "engine-instance-1",
+      "role": "engine",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "RetrievalRequest",
+    "schema_version": "1.0.0"
+  },
+  "RetrievalResult": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "retrievalresult-1",
+    "parent_refs": [],
+    "payload": {
+      "actual_charge": 1,
+      "completeness": "complete",
+      "coverage": "all synthetic rows",
+      "decision_id": "authorisationdecision-1",
+      "evidence_refs": [
+        {
+          "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "evidence_id": "evidence-1",
+          "revision": 1,
+          "scope_id": "scope-1"
+        }
+      ],
+      "limitations": [],
+      "request_id": "retrievalrequest-1",
+      "retry_classification": "none",
+      "source_snapshot": "snapshot-1",
+      "status": "success"
+    },
+    "producer": {
+      "component": "provider-component",
+      "instance_id": "provider-instance-1",
+      "role": "provider",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "RetrievalResult",
+    "schema_version": "1.0.0"
+  },
+  "VerificationRequest": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "verificationrequest-1",
+    "parent_refs": [],
+    "payload": {
+      "assumptions": [],
+      "contradictions": [],
+      "deadline": "2030-01-02T00:00:00Z",
+      "evidence_refs": [
+        {
+          "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "evidence_id": "evidence-1",
+          "revision": 1,
+          "scope_id": "scope-1"
+        }
+      ],
+      "proposal_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "proposal_id": "proposedfinding-1",
+      "proposal_revision": 1,
+      "proposer_component": "engine-component",
+      "required_checks": [
+        "recalculate"
+      ],
+      "verifier_component": "verifier-component",
+      "verifier_policy": "verifier-policy-1"
+    },
+    "producer": {
+      "component": "controller-component",
+      "instance_id": "controller-instance-1",
+      "role": "controller",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "VerificationRequest",
+    "schema_version": "1.0.0"
+  },
+  "VerificationResult": {
+    "classification": "synthetic",
+    "correlation_id": "investigation-1",
+    "created_at": "2030-01-01T00:00:00Z",
+    "object_id": "verificationresult-1",
+    "parent_refs": [],
+    "payload": {
+      "assumption_results": [],
+      "checked_calculations": [
+        "calculation-1"
+      ],
+      "checked_evidence_refs": [
+        {
+          "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "evidence_id": "evidence-1",
+          "revision": 1,
+          "scope_id": "scope-1"
+        }
+      ],
+      "contradiction_results": [],
+      "limitations": [
+        "not a final finding disposition"
+      ],
+      "outcome": "supported",
+      "proposal_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "proposal_id": "proposedfinding-1",
+      "proposal_revision": 1,
+      "proposer_component": "engine-component",
+      "rationale": "Synthetic values recalculate",
+      "request_id": "verificationrequest-1"
+    },
+    "producer": {
+      "component": "verifier-component",
+      "instance_id": "verifier-instance-1",
+      "role": "verifier",
+      "version": "1.0.0"
+    },
+    "revision": 1,
+    "schema_name": "VerificationResult",
+    "schema_version": "1.0.0"
+  }
+}

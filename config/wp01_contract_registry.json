@@ -1,0 +1,39 @@
+{
+  "registry_version": "1.0.0",
+  "contracts": {
+    "InvestigationScope": ["1.0.0"],
+    "InvestigationBudget": ["1.0.0"],
+    "BudgetUsage": ["1.0.0"],
+    "RetrievalRequest": ["1.0.0"],
+    "AuthorisationDecision": ["1.0.0"],
+    "RetrievalResult": ["1.0.0"],
+    "EvidenceRef": ["1.0.0"],
+    "Hypothesis": ["1.0.0"],
+    "ProposedFinding": ["1.0.0"],
+    "VerificationRequest": ["1.0.0"],
+    "VerificationResult": ["1.0.0"],
+    "InvestigationOutcome": ["1.0.0"],
+    "ContractFailure": ["1.0.0"]
+  },
+  "transformations": [
+    {
+      "contract": "RetrievalRequest",
+      "from": "0.9.0",
+      "to": "1.0.0",
+      "transform_id": "retrieval-request-0.9-to-1.0",
+      "rule": "add-empty-extensions-only"
+    }
+  ],
+  "limits": {
+    "max_encoded_bytes": 65536,
+    "max_identifier_chars": 128,
+    "max_text_chars": 8192,
+    "max_collection_items": 256
+  },
+  "authority": {
+    "final_finding_dispositions_enabled": false,
+    "canonical_report_inclusion_enabled": false,
+    "artifact_validation_enabled": false,
+    "publication_enabled": false
+  }
+}
