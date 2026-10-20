@@ -1,0 +1,2 @@
+ProposedFinding.direct_constructor|ACCEPTED_INVALID_PRODUCER|controller
+request_transition|PERMITTED|proposed|verification_pending|controller

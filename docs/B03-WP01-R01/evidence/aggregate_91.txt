@@ -1,0 +1,164 @@
+test_auth_deny_001_hypothesis_to_accepted_finding (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_001_hypothesis_to_accepted_finding) ... ok
+test_auth_deny_002_proposed_finding_to_accepted_finding (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_002_proposed_finding_to_accepted_finding) ... ok
+test_auth_deny_003_supported_verification_to_acceptance (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_003_supported_verification_to_acceptance) ... ok
+test_auth_deny_004_proposed_finding_to_published_conclusion (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_004_proposed_finding_to_published_conclusion) ... ok
+test_auth_deny_005_unapproved_actor_claim_grants_no_authority (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_005_unapproved_actor_claim_grants_no_authority) ... ok
+test_auth_deny_006_version_string_cannot_bypass_state_validation (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_006_version_string_cannot_bypass_state_validation) ... ok
+test_auth_deny_007_misrepresented_evidence_cannot_advance_proposal (tests.wp01.test_authority_denials.AuthorityDenialDemonstrations.test_auth_deny_007_misrepresented_evidence_cannot_advance_proposal) ... ok
+test_matrix_aut_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_001)
+Frozen prospective case AUT-001. ... ok
+test_matrix_aut_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_002)
+Frozen prospective case AUT-002. ... ok
+test_matrix_aut_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_003)
+Frozen prospective case AUT-003. ... ok
+test_matrix_aut_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_004)
+Frozen prospective case AUT-004. ... ok
+test_matrix_aut_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_005)
+Frozen prospective case AUT-005. ... ok
+test_matrix_aut_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_006)
+Frozen prospective case AUT-006. ... ok
+test_matrix_aut_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_007)
+Frozen prospective case AUT-007. ... ok
+test_matrix_aut_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_008)
+Frozen prospective case AUT-008. ... ok
+test_matrix_aut_009 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_009)
+Frozen prospective case AUT-009. ... ok
+test_matrix_aut_010 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_010)
+Frozen prospective case AUT-010. ... ok
+test_matrix_lin_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_001)
+Frozen prospective case LIN-001. ... ok
+test_matrix_lin_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_002)
+Frozen prospective case LIN-002. ... ok
+test_matrix_lin_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_003)
+Frozen prospective case LIN-003. ... ok
+test_matrix_lin_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_004)
+Frozen prospective case LIN-004. ... ok
+test_matrix_lin_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_005)
+Frozen prospective case LIN-005. ... ok
+test_matrix_lin_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_006)
+Frozen prospective case LIN-006. ... ok
+test_matrix_lin_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_007)
+Frozen prospective case LIN-007. ... ok
+test_matrix_lin_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_008)
+Frozen prospective case LIN-008. ... ok
+test_matrix_safe_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_001)
+Frozen prospective case SAFE-001. ... ok
+test_matrix_safe_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_002)
+Frozen prospective case SAFE-002. ... ok
+test_matrix_safe_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_003)
+Frozen prospective case SAFE-003. ... ok
+test_matrix_safe_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_004)
+Frozen prospective case SAFE-004. ... ok
+test_matrix_safe_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_005)
+Frozen prospective case SAFE-005. ... ok
+test_matrix_safe_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_006)
+Frozen prospective case SAFE-006. ... ok
+test_matrix_safe_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_007)
+Frozen prospective case SAFE-007. ... ok
+test_matrix_safe_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_008)
+Frozen prospective case SAFE-008. ... ok
+test_matrix_scp_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_001)
+Frozen prospective case SCP-001. ... ok
+test_matrix_scp_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_002)
+Frozen prospective case SCP-002. ... ok
+test_matrix_scp_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_003)
+Frozen prospective case SCP-003. ... ok
+test_matrix_scp_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_004)
+Frozen prospective case SCP-004. ... ok
+test_matrix_scp_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_005)
+Frozen prospective case SCP-005. ... ok
+test_matrix_scp_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_006)
+Frozen prospective case SCP-006. ... ok
+test_matrix_scp_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_007)
+Frozen prospective case SCP-007. ... ok
+test_matrix_scp_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_008)
+Frozen prospective case SCP-008. ... ok
+test_matrix_ser_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_001)
+Frozen prospective case SER-001. ... ok
+test_matrix_ser_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_002)
+Frozen prospective case SER-002. ... ok
+test_matrix_ser_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_003)
+Frozen prospective case SER-003. ... ok
+test_matrix_ser_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_004)
+Frozen prospective case SER-004. ... ok
+test_matrix_ser_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_005)
+Frozen prospective case SER-005. ... ok
+test_matrix_ser_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_006)
+Frozen prospective case SER-006. ... ok
+test_matrix_ser_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_007)
+Frozen prospective case SER-007. ... ok
+test_matrix_ser_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_008)
+Frozen prospective case SER-008. ... ok
+test_matrix_val_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_001)
+Frozen prospective case VAL-001. ... ok
+test_matrix_val_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_002)
+Frozen prospective case VAL-002. ... ok
+test_matrix_val_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_003)
+Frozen prospective case VAL-003. ... ok
+test_matrix_val_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_004)
+Frozen prospective case VAL-004. ... ok
+test_matrix_val_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_005)
+Frozen prospective case VAL-005. ... ok
+test_matrix_val_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_006)
+Frozen prospective case VAL-006. ... ok
+test_matrix_val_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_007)
+Frozen prospective case VAL-007. ... ok
+test_matrix_val_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_008)
+Frozen prospective case VAL-008. ... ok
+test_matrix_val_009 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_009)
+Frozen prospective case VAL-009. ... ok
+test_matrix_val_010 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_010)
+Frozen prospective case VAL-010. ... ok
+test_matrix_ver_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_001)
+Frozen prospective case VER-001. ... ok
+test_matrix_ver_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_002)
+Frozen prospective case VER-002. ... ok
+test_matrix_ver_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_003)
+Frozen prospective case VER-003. ... ok
+test_matrix_ver_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_004)
+Frozen prospective case VER-004. ... ok
+test_matrix_ver_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_005)
+Frozen prospective case VER-005. ... ok
+test_matrix_ver_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_006)
+Frozen prospective case VER-006. ... ok
+test_matrix_ver_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_007)
+Frozen prospective case VER-007. ... ok
+test_matrix_ver_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_008)
+Frozen prospective case VER-008. ... ok
+test_matrix_ver_009 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_009)
+Frozen prospective case VER-009. ... ok
+test_matrix_ver_010 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_010)
+Frozen prospective case VER-010. ... ok
+test_matrix_ver_011 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_011)
+Frozen prospective case VER-011. ... ok
+test_matrix_ver_012 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_012)
+Frozen prospective case VER-012. ... ok
+test_matrix_ver_013 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_013)
+Frozen prospective case VER-013. ... ok
+test_matrix_ver_014 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_014)
+Frozen prospective case VER-014. ... ok
+test_matrix_ver_015 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_015)
+Frozen prospective case VER-015. ... ok
+test_matrix_ver_016 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_016)
+Frozen prospective case VER-016. ... ok
+test_r01_asserted_role_is_the_effective_role_without_reinterpretation (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_asserted_role_is_the_effective_role_without_reinterpretation) ... ok
+test_r01_def_001_every_model_factory_rejects_unknown_patch (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_def_001_every_model_factory_rejects_unknown_patch) ... ok
+test_r01_def_001_malformed_unknown_and_missing_fields_remain_closed (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_def_001_malformed_unknown_and_missing_fields_remain_closed) ... ok
+test_r01_def_001_public_loaders_reject_unsupported_versions (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_def_001_public_loaders_reject_unsupported_versions) ... ok
+test_r01_def_001_registered_older_to_newer_transform_only (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_def_001_registered_older_to_newer_transform_only) ... ok
+test_r01_def_001_supported_default_and_registered_patch (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_def_001_supported_default_and_registered_patch) ... ok
+test_r01_def_002_direct_constructor_is_not_a_validation_bypass (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_def_002_direct_constructor_is_not_a_validation_bypass) ... ok
+test_r01_evidence_reference_and_canonical_round_trip (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_evidence_reference_and_canonical_round_trip) ... ok
+test_r01_parsing_and_transform_do_not_reinterpret_producer_role (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_parsing_and_transform_do_not_reinterpret_producer_role) ... ok
+test_r01_provisional_hypothesis_states_cannot_promote_findings_or_reports (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_provisional_hypothesis_states_cannot_promote_findings_or_reports) ... ok
+test_r01_transform_cannot_elevate_role_or_change_lifecycle (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_transform_cannot_elevate_role_or_change_lifecycle) ... ok
+test_r01_transform_preserves_actor_metadata_and_payload_meaning (tests.wp01.test_r01_regressions.R01DefectClosureTests.test_r01_transform_preserves_actor_metadata_and_payload_meaning) ... ok
+test_materialized_synthetic_fixture_set_validates (tests.wp01.test_registry.RegistryTests.test_materialized_synthetic_fixture_set_validates) ... ok
+test_registry_has_exact_contract_set_and_disables_post_wp01_authority (tests.wp01.test_registry.RegistryTests.test_registry_has_exact_contract_set_and_disables_post_wp01_authority) ... ok
+test_reg_001_typed_canonical_error_is_not_wrapped (tests.wp01.test_regressions.MatrixDefectRegressions.test_reg_001_typed_canonical_error_is_not_wrapped) ... ok
+test_reg_002_registered_cross_major_transform_runs_before_default_rejection (tests.wp01.test_regressions.MatrixDefectRegressions.test_reg_002_registered_cross_major_transform_runs_before_default_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 91 tests in 0.231s
+
+OK

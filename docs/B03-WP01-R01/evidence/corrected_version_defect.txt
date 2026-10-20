@@ -1,0 +1,6 @@
+InvestigationScope.from_mapping|2.0.0|REJECTED|ContractValidationError|UNSUPPORTED_MAJOR|UNSUPPORTED_MAJOR at $.schema_version: Unsupported contract major version
+InvestigationScope.from_mapping|1.1.0|REJECTED|ContractValidationError|UNSUPPORTED_VERSION|UNSUPPORTED_VERSION at $.schema_version: Version is not explicitly supported
+InvestigationScope.from_mapping|1.0.1|REJECTED|ContractValidationError|UNSUPPORTED_VERSION|UNSUPPORTED_VERSION at $.schema_version: Version is not explicitly supported
+load_contract|2.0.0|REJECTED|ContractValidationError|UNSUPPORTED_MAJOR|UNSUPPORTED_MAJOR at $.schema_version: Unsupported contract major version
+load_contract|1.1.0|REJECTED|ContractValidationError|UNSUPPORTED_VERSION|UNSUPPORTED_VERSION at $.schema_version: Version is not explicitly supported
+load_contract|1.0.1|REJECTED|ContractValidationError|UNSUPPORTED_VERSION|UNSUPPORTED_VERSION at $.schema_version: Version is not explicitly supported

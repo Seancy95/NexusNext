@@ -1,0 +1,57 @@
+{
+  "schema": "b03-wp01-r01-test-execution/1.0.0",
+  "executed_at_utc": "2026-10-20T12:13:31Z",
+  "environment": {
+    "host": "cloud-hosted Linux",
+    "kernel": "Linux 6.18.55 x86_64 GNU/Linux",
+    "python": "3.12.14",
+    "executor": "Codex developer execution"
+  },
+  "revisions": {
+    "parent_delivery": "543c41bedef93812ed52a150aa23e9a297d85436",
+    "corrective_source": "a7ab0e63a27731f806921e0c3e65ebed4fcac812"
+  },
+  "commands": [
+    {
+      "command": "PYTHONPATH=src python -m unittest tests.wp01.test_frozen_matrix -v",
+      "passed": 68,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 0.148,
+      "output_sha256": "929b6ca7abb0fdca97a517bd35e80675e2cc8babe140c59d754ede7f26efd1c9"
+    },
+    {
+      "command": "PYTHONPATH=src python -m unittest tests.wp01.test_authority_denials tests.wp01.test_registry tests.wp01.test_regressions -v",
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 0.056,
+      "output_sha256": "9f029d640d5bfc44508e34b61c77970b0a95f400edb879f78f113ae1cf982361"
+    },
+    {
+      "command": "PYTHONPATH=src python -m unittest tests.wp01.test_r01_regressions -v",
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 0.282,
+      "output_sha256": "b261a64d9c4c568c531df33dd930b47f5c52577594994237179fc432cef4a871"
+    },
+    {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests/wp01 -t . -v",
+      "passed": 91,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 0.231,
+      "output_sha256": "b6d8283cc53003f87040ee0b17188c9b90f47b0bd4629cb272725574aacd98d7"
+    }
+  ],
+  "aggregate": {
+    "passed": 91,
+    "failed": 0,
+    "skipped": 0,
+    "not_run": 0
+  },
+  "independent_verification": "Not Verified",
+  "formal_wp01_closure": false,
+  "windows_execution": "Not Run"
+}

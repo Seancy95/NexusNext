@@ -1,0 +1,2 @@
+ProposedFinding.direct_constructor|REJECTED|TypeError||Contracts must be created through from_mapping() or load_contract()
+ProposedFinding.from_mapping|REJECTED|ContractValidationError|UNAUTHORISED_ACTOR|UNAUTHORISED_ACTOR at $.producer.role: Only an engine or authorised operator can propose a finding

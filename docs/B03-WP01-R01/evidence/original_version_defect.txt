@@ -1,0 +1,6 @@
+InvestigationScope.from_mapping|2.0.0|ACCEPTED|2.0.0
+InvestigationScope.from_mapping|1.1.0|ACCEPTED|1.1.0
+InvestigationScope.from_mapping|1.0.1|ACCEPTED|1.0.1
+load_contract|2.0.0|ACCEPTED|2.0.0
+load_contract|1.1.0|ACCEPTED|1.1.0
+load_contract|1.0.1|ACCEPTED|1.0.1

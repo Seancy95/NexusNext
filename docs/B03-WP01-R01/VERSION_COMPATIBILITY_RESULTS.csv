@@ -1,0 +1,15 @@
+case_id,interface,input_version,receiver_version,registry_or_rule,expected,actual,test_reference
+R01-VER-001,InvestigationScope.from_mapping,2.0.0,1.0.0,none,UNSUPPORTED_MAJOR,UNSUPPORTED_MAJOR,test_r01_def_001_public_loaders_reject_unsupported_versions
+R01-VER-002,InvestigationScope.from_mapping,1.1.0,1.0.0,none,UNSUPPORTED_VERSION,UNSUPPORTED_VERSION,test_r01_def_001_public_loaders_reject_unsupported_versions
+R01-VER-003,InvestigationScope.from_mapping,1.0.1,1.0.0,none,UNSUPPORTED_VERSION,UNSUPPORTED_VERSION,test_r01_def_001_public_loaders_reject_unsupported_versions
+R01-VER-004,load_contract,2.0.0,1.0.0,none,UNSUPPORTED_MAJOR,UNSUPPORTED_MAJOR,test_r01_def_001_public_loaders_reject_unsupported_versions
+R01-VER-005,load_contract,1.1.0,1.0.0,none,UNSUPPORTED_VERSION,UNSUPPORTED_VERSION,test_r01_def_001_public_loaders_reject_unsupported_versions
+R01-VER-006,load_contract,1.0.1,1.0.0,none,UNSUPPORTED_VERSION,UNSUPPORTED_VERSION,test_r01_def_001_public_loaders_reject_unsupported_versions
+R01-VER-007,all 13 model factories,1.0.1,1.0.0,none,UNSUPPORTED_VERSION,UNSUPPORTED_VERSION,test_r01_def_001_every_model_factory_rejects_unknown_patch
+R01-VER-008,load_contract,1.0.0,1.0.0,default exact support,accept,accepted,test_r01_def_001_supported_default_and_registered_patch
+R01-VER-009,load_contract,1.0.1,1.0.1,explicit registry exact support,accept,accepted,test_r01_def_001_supported_default_and_registered_patch
+R01-VER-010,load_contract RetrievalRequest,0.9.0,1.0.0,retrieval-request-0.9-to-1.0,transform,transformed with provenance,test_r01_def_001_registered_older_to_newer_transform_only
+R01-VER-011,load_contract RetrievalRequest,1.0.0,0.9.0,no reverse rule,UNSUPPORTED_MAJOR,UNSUPPORTED_MAJOR,test_r01_def_001_registered_older_to_newer_transform_only
+R01-VER-012,load_contract,1.x,1.0.0,none,MALFORMED_VERSION,MALFORMED_VERSION,test_r01_def_001_malformed_unknown_and_missing_fields_remain_closed
+R01-VER-013,CompatibilityRegistry.prepare,0.9.0,1.0.0,registered transform disabled,UNSUPPORTED_VERSION,UNSUPPORTED_VERSION,VER-003
+R01-VER-014,load_contract,1.0.0,1.0.0,payload fallback_versions bypass,NEGOTIATION_BYPASS,NEGOTIATION_BYPASS,VER-014

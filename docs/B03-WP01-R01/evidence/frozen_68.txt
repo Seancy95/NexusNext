@@ -1,0 +1,141 @@
+test_matrix_aut_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_001)
+Frozen prospective case AUT-001. ... ok
+test_matrix_aut_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_002)
+Frozen prospective case AUT-002. ... ok
+test_matrix_aut_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_003)
+Frozen prospective case AUT-003. ... ok
+test_matrix_aut_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_004)
+Frozen prospective case AUT-004. ... ok
+test_matrix_aut_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_005)
+Frozen prospective case AUT-005. ... ok
+test_matrix_aut_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_006)
+Frozen prospective case AUT-006. ... ok
+test_matrix_aut_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_007)
+Frozen prospective case AUT-007. ... ok
+test_matrix_aut_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_008)
+Frozen prospective case AUT-008. ... ok
+test_matrix_aut_009 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_009)
+Frozen prospective case AUT-009. ... ok
+test_matrix_aut_010 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_aut_010)
+Frozen prospective case AUT-010. ... ok
+test_matrix_lin_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_001)
+Frozen prospective case LIN-001. ... ok
+test_matrix_lin_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_002)
+Frozen prospective case LIN-002. ... ok
+test_matrix_lin_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_003)
+Frozen prospective case LIN-003. ... ok
+test_matrix_lin_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_004)
+Frozen prospective case LIN-004. ... ok
+test_matrix_lin_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_005)
+Frozen prospective case LIN-005. ... ok
+test_matrix_lin_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_006)
+Frozen prospective case LIN-006. ... ok
+test_matrix_lin_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_007)
+Frozen prospective case LIN-007. ... ok
+test_matrix_lin_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_lin_008)
+Frozen prospective case LIN-008. ... ok
+test_matrix_safe_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_001)
+Frozen prospective case SAFE-001. ... ok
+test_matrix_safe_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_002)
+Frozen prospective case SAFE-002. ... ok
+test_matrix_safe_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_003)
+Frozen prospective case SAFE-003. ... ok
+test_matrix_safe_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_004)
+Frozen prospective case SAFE-004. ... ok
+test_matrix_safe_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_005)
+Frozen prospective case SAFE-005. ... ok
+test_matrix_safe_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_006)
+Frozen prospective case SAFE-006. ... ok
+test_matrix_safe_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_007)
+Frozen prospective case SAFE-007. ... ok
+test_matrix_safe_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_safe_008)
+Frozen prospective case SAFE-008. ... ok
+test_matrix_scp_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_001)
+Frozen prospective case SCP-001. ... ok
+test_matrix_scp_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_002)
+Frozen prospective case SCP-002. ... ok
+test_matrix_scp_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_003)
+Frozen prospective case SCP-003. ... ok
+test_matrix_scp_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_004)
+Frozen prospective case SCP-004. ... ok
+test_matrix_scp_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_005)
+Frozen prospective case SCP-005. ... ok
+test_matrix_scp_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_006)
+Frozen prospective case SCP-006. ... ok
+test_matrix_scp_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_007)
+Frozen prospective case SCP-007. ... ok
+test_matrix_scp_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_scp_008)
+Frozen prospective case SCP-008. ... ok
+test_matrix_ser_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_001)
+Frozen prospective case SER-001. ... ok
+test_matrix_ser_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_002)
+Frozen prospective case SER-002. ... ok
+test_matrix_ser_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_003)
+Frozen prospective case SER-003. ... ok
+test_matrix_ser_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_004)
+Frozen prospective case SER-004. ... ok
+test_matrix_ser_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_005)
+Frozen prospective case SER-005. ... ok
+test_matrix_ser_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_006)
+Frozen prospective case SER-006. ... ok
+test_matrix_ser_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_007)
+Frozen prospective case SER-007. ... ok
+test_matrix_ser_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ser_008)
+Frozen prospective case SER-008. ... ok
+test_matrix_val_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_001)
+Frozen prospective case VAL-001. ... ok
+test_matrix_val_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_002)
+Frozen prospective case VAL-002. ... ok
+test_matrix_val_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_003)
+Frozen prospective case VAL-003. ... ok
+test_matrix_val_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_004)
+Frozen prospective case VAL-004. ... ok
+test_matrix_val_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_005)
+Frozen prospective case VAL-005. ... ok
+test_matrix_val_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_006)
+Frozen prospective case VAL-006. ... ok
+test_matrix_val_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_007)
+Frozen prospective case VAL-007. ... ok
+test_matrix_val_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_008)
+Frozen prospective case VAL-008. ... ok
+test_matrix_val_009 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_009)
+Frozen prospective case VAL-009. ... ok
+test_matrix_val_010 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_val_010)
+Frozen prospective case VAL-010. ... ok
+test_matrix_ver_001 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_001)
+Frozen prospective case VER-001. ... ok
+test_matrix_ver_002 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_002)
+Frozen prospective case VER-002. ... ok
+test_matrix_ver_003 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_003)
+Frozen prospective case VER-003. ... ok
+test_matrix_ver_004 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_004)
+Frozen prospective case VER-004. ... ok
+test_matrix_ver_005 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_005)
+Frozen prospective case VER-005. ... ok
+test_matrix_ver_006 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_006)
+Frozen prospective case VER-006. ... ok
+test_matrix_ver_007 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_007)
+Frozen prospective case VER-007. ... ok
+test_matrix_ver_008 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_008)
+Frozen prospective case VER-008. ... ok
+test_matrix_ver_009 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_009)
+Frozen prospective case VER-009. ... ok
+test_matrix_ver_010 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_010)
+Frozen prospective case VER-010. ... ok
+test_matrix_ver_011 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_011)
+Frozen prospective case VER-011. ... ok
+test_matrix_ver_012 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_012)
+Frozen prospective case VER-012. ... ok
+test_matrix_ver_013 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_013)
+Frozen prospective case VER-013. ... ok
+test_matrix_ver_014 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_014)
+Frozen prospective case VER-014. ... ok
+test_matrix_ver_015 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_015)
+Frozen prospective case VER-015. ... ok
+test_matrix_ver_016 (tests.wp01.test_frozen_matrix.FrozenMatrixTests.test_matrix_ver_016)
+Frozen prospective case VER-016. ... ok
+
+----------------------------------------------------------------------
+Ran 68 tests in 0.148s
+
+OK
