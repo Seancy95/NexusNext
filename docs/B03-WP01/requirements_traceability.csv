@@ -1,0 +1,16 @@
+requirement,implementation,evidence,status,limitation
+Frozen reproducible baseline,docs/B03-WP01/BASELINE_MANIFEST.md,baseline commit 3a9dd5cf6a5109126fcb98abee9b403a730957b6; archive SHA-256 08b3099e3cf5e57c5a3e6d0ebee0a870836c8084bc260b49205cf5ff84768cd7,Passed for WP01 baseline,Excluded material remains local and requires owner review
+13 versioned contracts,src/nexus_next/investigation_contracts/models.py,SER cases; materialized fixture validation; maturity register,Passed,Independent verification not performed
+Strict common validation,src/nexus_next/investigation_contracts/validation.py; errors.py,VAL-001 through VAL-010; SAFE cases,Passed,No fuzzing or third-party schema validator
+Canonical serialization,src/nexus_next/investigation_contracts/serialization.py,SER round trips; VAL-003/004/009; SAFE-004; REG-001,Passed for supported restricted JSON domain,No independent RFC 8785 vector verification; floats prohibited
+Version compatibility,src/nexus_next/investigation_contracts/versioning.py; config/wp01_contract_registry.json,VER-001 through VER-016; REG-002; registry tests,Passed,One explicit synthetic transformation implemented
+Scope and budget,InvestigationScope; InvestigationBudget; BudgetUsage; authority.validate_retrieval_request,SER-001/002; SCP-001/002/003/005/006; AUT-009/010,Passed,No durable/concurrent budget service or live retrieval
+Retrieval contracts,RetrievalRequest; AuthorisationDecision; RetrievalResult,SER-003/004; SCP-004/007/008; SAFE-002/003,Passed,No connector transport or secure caller authentication
+Evidence and lineage,EvidenceRef; EvidenceIndex,LIN-001 through LIN-006; AUTH-DENY-007,Passed,In-memory synthetic index only
+Hypothesis and proposed findings,Hypothesis; ProposedFinding; authority.request_transition,VAL-008; SER-006; AUT cases; AUTH-DENY-001/002/004/005,Passed as representations and denials,No hypothesis generation analytical reasoning or disposition policy
+Independent verification contracts,VerificationRequest; VerificationResult,AUT-002/003/004/005/006; SER-007; AUTH-DENY-003,Passed at contract level,Logical separation is not secure runtime identity enforcement
+Investigation termination and failure,InvestigationOutcome; ContractFailure,LIN-008; SAFE-001/004/005/007/008,Passed,No orchestration implemented
+Frozen 68-case matrix,tests/wp01/test_frozen_matrix.py; matrix_cases.py,68 passed 0 failed 0 skipped at 9552fa8a12933b388a73cb31c4d1a27156996794,Passed,Passing does not establish analytical competence or production readiness
+Mandatory authority denial,tests/wp01/test_authority_denials.py,7 passed 0 failed 0 skipped; AUTHORITY_DENIAL_EVIDENCE.csv,Passed at executable contract boundary,No secure IPC OS isolation or caller authentication
+Additional regression coverage,tests/wp01/test_registry.py; test_regressions.py,4 passed 0 failed 0 skipped,Passed,Only defects observed during this bounded implementation
+Excluded work,None,Source/import inspection and contract registry authority flags,Passed: absent,No CAP-15 CAP-17 planner analytics model reporting publication benchmark live connector or G2 Phase 1

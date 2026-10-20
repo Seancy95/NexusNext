@@ -1,0 +1,64 @@
+{
+  "schema": "b03-wp01-test-execution/1.0.0",
+  "executed_at_utc": "2026-10-20T11:51:37Z",
+  "environment": {
+    "host": "cloud-hosted Linux",
+    "kernel": "Linux 6.18.55 x86_64 GNU/Linux",
+    "python": "3.12.14",
+    "worktree": "clean detached worktree at the implementation commit"
+  },
+  "revisions": {
+    "pre01_closeout": "d15f55d69e6ceb53319aa0d489900c78bd5af895",
+    "readiness": "62977bba5d610fad92bcd284e99003f2a6fad7b4",
+    "implementation_baseline": "3a9dd5cf6a5109126fcb98abee9b403a730957b6",
+    "implementation_under_test": "9552fa8a12933b388a73cb31c4d1a27156996794"
+  },
+  "commands": [
+    {
+      "command": "PYTHONPATH=src python -m unittest tests.wp01.test_frozen_matrix -v",
+      "passed": 68,
+      "failed": 0,
+      "skipped": 0,
+      "not_run": 0,
+      "duration_seconds": 0.329,
+      "output_sha256": "ffc0a7f9a405661eebd30c98d1e0a0f47eb53a38989ea5b70b255eb50658306b"
+    },
+    {
+      "command": "PYTHONPATH=src python -m unittest tests.wp01.test_authority_denials -v",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "not_run": 0,
+      "duration_seconds": 0.031,
+      "output_sha256": "5b44f07a293b73428031e15b61080b70eb227472d3c26c52fdb4d27859748cde"
+    },
+    {
+      "command": "PYTHONPATH=src python -m unittest tests.wp01.test_registry tests.wp01.test_regressions -v",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "not_run": 0,
+      "duration_seconds": 0.005,
+      "output_sha256": "4c08e28ebdd232f1ffa06e4639bbc634d797e28574d4d0559c0f2e9a19e59a10"
+    }
+  ],
+  "aggregate": {
+    "passed": 79,
+    "failed": 0,
+    "skipped": 0,
+    "not_run": 0
+  },
+  "initial_matrix_run": {
+    "status": "failed before correction",
+    "passed": 64,
+    "failed": 3,
+    "errors": 1,
+    "defects": [
+      "typed canonical validation errors were wrapped as SERIALIZATION_FAILURE",
+      "registered 0.9.0 to 1.0.0 transformation was checked after default major-version rejection"
+    ],
+    "resolution_tests": ["REG-001", "REG-002"]
+  },
+  "independent_verification": "Not Verified",
+  "scope_statement": "Synthetic contract and conformance execution only; no analytical reasoning, secure IPC, Windows isolation, reporting, publication, model, connector or benchmark execution."
+}

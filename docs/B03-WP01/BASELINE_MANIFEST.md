@@ -10,7 +10,7 @@
 
 **PRE01 close-out revision:** `d15f55d69e6ceb53319aa0d489900c78bd5af895`
 
-**Implementation baseline revision:** recorded in the subsequent implementation report after this manifest is committed
+**Implementation baseline revision:** `3a9dd5cf6a5109126fcb98abee9b403a730957b6`
 
 ## 1. Baseline determination
 
