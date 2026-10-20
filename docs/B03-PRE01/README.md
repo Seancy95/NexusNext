@@ -16,13 +16,14 @@ This specifies an investigation process rather than a report selector; a predefi
 
 ## Deliverables
 
-1. [Architecture Contract Reconciliation](01_ARCHITECTURE_CONTRACT_RECONCILIATION.md)
-2. [Reasoning Boundary and Investigative Method Catalogue](02_REASONING_BOUNDARY_AND_METHOD_CATALOGUE.md)
-3. [Deterministic Investigation Strategy and Worked Example](03_DETERMINISTIC_INVESTIGATION_STRATEGY.md)
-4. [Behavioural Milestones and B03-WP01 Proposal](04_BEHAVIOURAL_MILESTONES_AND_WP01.md)
-5. [Git Provenance and Repository Readiness](05_GIT_PROVENANCE_AND_READINESS.md)
-6. [Requirements-to-contract traceability](requirements_to_contract_traceability.csv)
-7. `SHA256SUMS.txt` — local integrity manifest for this package
+1. [B03-PRE01 Close-out — Final Authority and Quality Addendum](B03-PRE01-CLOSEOUT.md)
+2. [Architecture Contract Reconciliation](01_ARCHITECTURE_CONTRACT_RECONCILIATION.md)
+3. [Reasoning Boundary and Investigative Method Catalogue](02_REASONING_BOUNDARY_AND_METHOD_CATALOGUE.md)
+4. [Deterministic Investigation Strategy and Worked Example](03_DETERMINISTIC_INVESTIGATION_STRATEGY.md)
+5. [Behavioural Milestones and B03-WP01 Proposal](04_BEHAVIOURAL_MILESTONES_AND_WP01.md)
+6. [Git Provenance and Repository Readiness](05_GIT_PROVENANCE_AND_READINESS.md)
+7. [Requirements-to-contract traceability](requirements_to_contract_traceability.csv)
+8. `SHA256SUMS.txt` — local integrity manifest for this package
 
 ## Claim labels used throughout
 
@@ -46,7 +47,7 @@ Conceptual feasibility, specification, implementation, test execution, independe
 - B03-PRE01 assignment, SHA-256 `e48817a312798ee0cfa80f0c23d586c18d505589b8cd946b7fd019494c9652ae`.
 - B03-PRE01 close-out assignment and authority/quality addendum, supplied 2026-10-20; SHA-256 recorded in document 05.
 - `docs/CLOUD-EVAL-B01_Adaptive_Investigation_Benchmark_Specification.md`, untracked working-tree file, SHA-256 `ebc69b607dde0bf006decdc7c0bbf8312f91fee25eea6ef32841b7bb08be8727`.
-- Tracked B02, B03 and PRE01 v0.1 packages at repository `HEAD` `669a7bf7072e529c04e20154587767be1090f2f8`; the close-out corrections are local modifications after that commit.
+- Tracked B02, B03 and PRE01 v0.1 packages at repository revision `669a7bf7072e529c04e20154587767be1090f2f8`; corrected close-out source documents were subsequently committed at `0a6dc5eac7d8a5f594426f5a159913d963433ed4` after the user explicitly requested a downloadable Git delivery.
 - Untracked G2 source and tests identified in the provenance report. Their portable suite passed 47 tests on Python 3.12.14/Linux during initial PRE01 inspection on 2026-10-15; it was not rerun for this documentation-only close-out.
 - Nexus 10.3.43 is used only through the B02/B03 recorded assessment and domain catalogue; no legacy engine was modified or reused.
 
