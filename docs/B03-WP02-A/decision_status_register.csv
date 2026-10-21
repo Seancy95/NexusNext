@@ -1,13 +1,20 @@
 decision_id,subject,status,basis,dependent_activity,required_owner
-DEC-001,Unfavourable Nexus result permitted,Approved requirement,WP02-A assignment,All evaluation stages,Evaluation authority
-DEC-002,Implementation and benchmark prohibited in WP02-A,Approved requirement,WP02-A assignment,Current stopping condition,Architecture owner
-DEC-003,Same access and budget for Nexus and comparator,Approved requirement,WP02-A assignment,Experimental execution,Experimental-validity reviewer
-DEC-004,Paired scenario design,Proposed method,01_EVALUATION_SPECIFICATION.md,Scoring and statistics,Methodology reviewer
-DEC-005,Numerical acceptance thresholds,Proposed untested,03_SCORING_AND_VALUE_FRAMEWORK.md,WP02-B and evaluation freeze,Programme and statistics owners
-DEC-006,Minimum 40 controlled scenarios,Proposed untested,02_SCENARIO_AND_GROUND_TRUTH.md,Sample design,Statistics owner
-DEC-007,Hidden custody store and technology,Unresolved,05_INDEPENDENCE_AND_CONTAMINATION.md,Hidden scenario creation,Security and scenario authorities
-DEC-008,Named independent roles,Unresolved,05_INDEPENDENCE_AND_CONTAMINATION.md,Independent claim,Programme owner
-DEC-009,Comparator capability and gate,Proposed,04_COMPARATOR_SPECIFICATION.md,Comparator implementation,Comparator review panel
-DEC-010,Minimal WP02-B method subset,Proposed,07_MINIMAL_WP02_B_SCOPE.md,Product implementation,Architecture owner
-DEC-011,Hidden scenario set,Not Created,Stopping condition,Independent execution,Scenario authority
-DEC-012,Benchmark execution,Not Run,Stopping condition,Performance claims,Evaluation authority
+DEC-001,Unfavourable and inconclusive Nexus results permitted,Approved requirement,WP02-A and R01 assignments,All evaluation stages,Evaluation authority
+DEC-002,Implementation and benchmark prohibited in WP02-A-R01,Approved requirement,R01 stopping condition,Current work,Architecture owner
+DEC-003,All user-visible material assertions eligible for scoring,Approved R01 policy,01 §5.1 and 03,Scoring implementation,Scoring authority
+DEC-004,Paired scenario design,Proposed method,01 §3,Scoring and statistics,Methodology reviewer
+DEC-005,Numerical acceptance thresholds,Proposed and untested,03 §7,WP02-B and evaluation freeze,Programme/statistics owners
+DEC-006,80 overall-effect and 100 full-decision scenarios,Proposed and untested,02 §5 and 03 §8,Sample design,Statistics owner
+DEC-007,Business operational-value and cost criteria,Proposed with unresolved inputs,03 §9,Programme decision,Business/programme owner
+DEC-008,Prospective programme decision matrix,Proposed,03 §10,Post-evaluation programme action,Programme/evaluation authorities
+DEC-009,Predefined deterministic methods are legitimate,Approved R01 clarification,02 §6 and 07,Generalisation scoring,Methodology reviewer
+DEC-010,Hidden custody store and technology,Unresolved,05,Hidden scenario creation/execution,Security/scenario authorities
+DEC-011,Operational separation,Not Implemented,05 §2,Hidden evaluation,Security/scenario authorities
+DEC-012,Independent evaluation-integrity verification,Not Verified,05 §2 and 09 E04,Independent claim,Independent integrity reviewer
+DEC-013,Comparator C-SPEC gate before WP02-B,Approved R01 requirement; method proposed,04 §5,WP02-B authorisation,Comparator review panel
+DEC-014,Comparator C-IMPL gate before comparative execution,Approved R01 requirement; method proposed,04 §6,Hidden evaluation,Comparator review panel
+DEC-015,Minimal WP02-B method subset,Proposed unchanged,07,Product implementation,Architecture owner
+DEC-016,Hidden scenario set,Not Created,Stopping condition,Independent execution,Scenario authority
+DEC-017,Benchmark execution,Not Run,Stopping condition,Performance claims,Evaluation authority
+DEC-018,WP02-A-R01 acceptance,Conditional recommendation,08 §5 and 09,Design approval,Independent methodology/statistics reviewer
+DEC-019,WP02-B readiness,Not Ready,09 G01-G15 pending,Implementation authorisation,Architecture/programme owners

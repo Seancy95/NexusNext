@@ -62,16 +62,31 @@ At least the preregistered minimum stratum contains scenarios where evidence can
 
 These are separate outcome classes and receive separate accuracy, restraint and stopping results.
 
-## 5. Proposed counts and sampling
+## 5. Corrected proposed counts and sampling
 
-- Approximately 10 open development/pilot scenarios may validate procedure and variance assumptions. They provide no confirmatory competence evidence.
-- The controlled hidden evaluation is **proposed** to start with at least 40 distinct scenarios, including at least 6 no-material and 6 insufficient-evidence scenarios, with the other required families represented according to the frozen sampling plan.
-- Final count is set by prospective paired power or precision analysis using pilot variance, the smallest decision-relevant effect, planned strata, multiplicity and scenario-family clustering. Forty is a planning floor, not automatic proof of adequacy.
-- Extended evaluation may use 100+ distinct scenarios when rare critical failures, category conclusions or narrow intervals require it.
-- Deterministic builds run once per scenario for the primary estimate; at least 20% receive a duplicate execution selected before outcomes to detect nondeterminism. Any stochastic component would require at least three seeded repeats per scenario/configuration cell, still clustered by scenario.
+- Use 12–16 open development/pilot scenarios to validate interfaces, scoring, variance assumptions and failure procedures. They provide no confirmatory competence evidence and are never pooled into the hidden estimate.
+- The paired macro-recall design targets a minimum worthwhile improvement of 0.10. Under the explicit planning assumption that the standard deviation of paired scenario recall differences is 0.30, two-sided alpha 0.05 and 80% power, the normal approximation is `n = (1.96 + 0.84)^2 × 0.30^2 / 0.10^2 = 70.6`, rounded to 71 distinct scenarios. Allowing approximately 10% unusable scenarios/runs gives 79, rounded to **80 distinct confirmatory scenarios**.
+- Eighty supports the overall co-primary comparison under those assumptions. It does not adequately support strong separate claims about negative and insufficient-evidence strata if those strata are small.
+- For the full programme decision, use **100 distinct hidden scenarios** as the proposed design: 60 material-finding scenarios, 20 no-material scenarios and 20 insufficient-evidence scenarios. Mechanism/data/temporal categories cross these outcome strata rather than forming mutually exclusive leftovers. At least 20 scenarios combine multiple mechanisms.
+- If resources permit only 80, preserve at least 15 no-material and 15 insufficient-evidence scenarios. Separate outcome-class conclusions are then limited or labelled Inconclusive unless their prospective precision criterion is met.
+- Pilot estimates replace the assumed paired SD only before hidden outcomes and before confirmatory sample size is frozen. If `SD=0.35`, the same formula gives approximately 97 scenarios before attrition; the programme must increase the sample or accept an Inconclusive confirmatory result.
+- A zero observed critical event does not establish zero population risk. The approximate one-sided 95% “rule of three” upper bound is 3.75% at 80 scenarios and 3.0% at 100. Any observed critical event still fails the applicable gate, while the interval limits the population claim.
+- Deterministic builds run once per scenario for the primary estimate; at least 20% receive a duplicate execution selected before outcomes to detect nondeterminism. Any stochastic component requires at least three seeded repeats per scenario/configuration cell and a revised power model. Repeats remain clustered under their scenario.
 
-## 6. Scenario acceptance checks
+The final count and allocation are **Proposed evaluation parameters**, not approved facts. They require an independent statistical review before implementation. Counts may increase prospectively; they may not be reduced or thresholds changed after hidden outcomes.
 
-A hidden scenario is admitted only if both systems can reach every scored evidence item under the common operation catalogue and budget; the reference calculations reproduce; materiality rules are unambiguous; the correct terminal class is independently agreed; alternative valid paths are represented; no package metadata or identifiers reveal protected truth; and the scenario is absent from implementation-accessible training, prompt, fixture and repository material.
+## 6. Known-pattern competence and investigative generalisation
+
+Predefined deterministic methods are legitimate. A system is not penalised because its calculations, rules, hypothesis templates or selection policy are deterministic. **Known-pattern competence** means applying an approved method correctly to evidence for which it is applicable. **Investigative generalisation** means selecting, combining, ordering and adapting permitted methods appropriately when evidence structure, question representation, mechanism combinations and useful follow-up sequences differ from development examples.
+
+Hidden design must include multi-mechanism combinations, column/table and relationship-structure perturbations, equivalent questions represented differently, unfamiliar but typed relationships, irrelevant/misleading evidence, competing hypotheses, contradictory sources, alternative necessary follow-up orders, and cases where the development-template path points to the wrong next action.
+
+For selected scenario families, the authority creates metamorphic variants with the same analytical truth but changed names, ordering, table splits/joins, source placement or question phrasing, plus contrast variants that look similar but require different actions. Scoring compares outcome correctness and decision traces. Indicators of shortcut dependence include fixed operation sequences insensitive to evidence, reliance on scenario IDs/field order, failure under meaning-preserving representation changes, identical hypotheses despite changed falsifiers, and divergence between the stated decision rule and trace.
+
+The evaluation asks whether bounded methods are used appropriately. It does not require unrestricted reasoning, novel methods outside the approved catalogue, CAP-15/CAP-17 completion or unbounded handling of arbitrary domains.
+
+## 7. Scenario acceptance checks
+
+A hidden scenario is admitted only if both systems can reach every scored evidence item under the common operation catalogue and budget; the reference calculations reproduce; materiality rules are unambiguous; the correct terminal class is independently agreed; alternative valid paths are represented; no package metadata or identifiers reveal protected truth; and the scenario is absent from implementation-accessible training, prompt, fixture and repository material. Generalisation variants must test permitted method selection rather than require an unavailable method.
 
 If a scenario defect is found after freeze, it is quarantined. The adjudicator applies the preregistered invalid-scenario rule without seeing system identity where possible. Replacement uses a new scenario from the same frozen sampling frame and is fully disclosed.

@@ -4,6 +4,8 @@
 
 Every Failed or Inconclusive scenario receives one scenario record plus one row per material error/event in `failure_analysis_template.csv`. The record contains expected and actual findings, examined and missed evidence, actions/follow-ups, contradiction treatment, stopping behaviour, materiality/severity, comparator impact and potential action. Aggregate rates never replace these records.
 
+Every user-visible material statement is additionally recorded in `assertion_exposure_template.csv`. The assertion-family key avoids counting a repeated paraphrase as a new false claim, while the exposure rows preserve each channel, repetition, contradiction, correction and retraction. A post-exposure correction changes remediation fields only; it does not delete the original unsupported-assertion event.
+
 ## 2. Taxonomy
 
 | Code | Classification | Definition |

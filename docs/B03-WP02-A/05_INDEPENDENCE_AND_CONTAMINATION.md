@@ -24,6 +24,16 @@ The implementation repository contains only public specifications, open developm
 
 Instructions telling an agent not to inspect accessible files do not establish secrecy. If technical ACLs, logs and separate administration cannot be demonstrated, the exercise is labelled **developer testing**, not independent evaluation.
 
+Evaluation governance distinguishes three non-interchangeable states:
+
+1. **Designed hidden-scenario separation:** this document assigns roles, stores and prohibited access. Status after WP02-A-R01: Designed only.
+2. **Operationally enforced separation:** selected infrastructure actually applies separate administration, least-privilege identities, credentials, ACLs, network/filesystem boundaries, input/truth separation and immutable access logs. This must be demonstrated before any hidden input is released.
+3. **Independently verified evaluation integrity:** a reviewer outside implementation and custody verifies the configured controls, freeze manifests, access tests/logs, release path and absence/disposition of leakage. This is required before the resulting exercise may be described as independently evaluated.
+
+Operational evidence must include named role-to-identity mapping; store and ACL exports; proof implementation identities cannot list/read truth objects; denied-access tests; credential issuance/expiry; administrator separation; network/filesystem policy; log retention and tamper controls; input-only release dry run; truth/output separation; implementation-freeze digest; repository/prompt contamination scan; and incident/quarantine rehearsal. Screenshots or policy text without an exercised deny path are insufficient.
+
+No hidden evaluation may start until operational separation has passed its evidence review and both implementations are frozen. Independent-integrity verification may examine the final execution logs afterward, but the pre-execution control review is blocking.
+
 ## 3. Version and freeze manifests
 
 Before hidden release, the evaluation authority signs a manifest containing:
@@ -50,15 +60,15 @@ The investigation preserves affected artifacts, suspends unblinding, identifies 
 
 ## 5. Retirement and replacement
 
-A scenario is contaminated when an implementation agent/operator received protected truth, expected findings, false leads, contradictions, stop rules, causal mechanism or scoring annotation before the relevant build freeze, or when leakage cannot reasonably be excluded. It is retired from hidden use for that implementation lineage and becomes development/regression material.
+A scenario is contaminated when an implementation agent/operator received protected truth, expected findings, false leads, contradictions, stop rules, causal mechanism or scoring annotation before the relevant build freeze, or when leakage cannot reasonably be excluded. Suspected contamination triggers immediate **quarantine** while access evidence is investigated. Confirmed or unresolved plausible exposure causes **retirement** from hidden use for that implementation lineage; the scenario becomes development/regression material.
 
-Replacement comes from the frozen sampling frame, matches the stratum, receives fresh independent truth review and a new manifest entry. Replacement never occurs merely because a system performed poorly. Counts, reasons and effects are reported. If contamination is broad or differential, experimental validity fails rather than being repaired through selective replacement.
+Replacement is permitted only when the preregistered rule allows it, comes from the frozen sampling frame, matches the stratum, receives fresh independent truth review and a new manifest entry. Replacement never occurs merely because a system performed poorly. Counts, reasons and effects are reported. If contamination is broad, differential, discovered after outcome-aware handling, or cannot be bounded, experimental validity fails rather than being repaired through selective replacement.
 
 ## 6. Independent execution and scoring
 
 The operator receives input-only packages and invokes both frozen systems under randomised paired order. The scorer receives outputs only after the block is complete. Where practical, outputs are system-blinded during event scoring. Scorers apply the frozen rubric; adjudication history is append-only. Failed, timed-out and inconclusive runs remain visible under prospective rules.
 
-Independent evaluation requires: role separation, inaccessible protected truth, frozen builds/rubric, access evidence, input-only execution, independent scoring, reproducible manifests, and disclosed deviations. Missing any material element yields Inconclusive or developer-testing status according to impact.
+Independent evaluation requires: designed separation, demonstrated operational enforcement, frozen builds/rubric, independently reviewed access evidence, input-only execution, independent scoring, reproducible manifests, post-run access-log review and disclosed deviations. Missing any material element yields Inconclusive or developer-testing status according to impact.
 
 ## 7. Retention
 

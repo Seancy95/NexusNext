@@ -37,7 +37,7 @@ Post-result tuning creates a new implementation revision and a new evaluation bl
 - **Primary sampling unit:** a distinct scenario. Repeated executions of one scenario are nested observations and never increase the independent scenario count.
 - **Design:** paired within scenario. Nexus and comparator receive logically identical evidence snapshots, question, operation catalogue and budget. Run order is randomised and recorded.
 - **Primary estimand:** paired difference in scenario-level material-finding recall, Nexus minus comparator, over the declared target scenario population.
-- **Co-primary restraint estimand:** paired difference in scenario-level material unsupported-claim rate. Nexus must meet the absolute safety threshold and must not be materially worse.
+- **Co-primary restraint estimand:** paired difference in scenario-level material unsupported-assertion rate across every user-visible output. Nexus must meet the absolute safety threshold and must not be materially worse.
 - **Secondary estimands:** correct terminal outcome, contradiction recall, appropriate stopping, incremental discovery precision, retrieval count, rounds, evidence bytes, runtime and implementation/operational complexity.
 - **Strata:** deterioration mechanism, data-quality challenge, contradiction/competing explanation, temporal trap, outcome class, and difficulty. Results are reported overall and by preregistered stratum without implying powered subgroup conclusions unless sample design supports them.
 - **Human assistance:** none during an eligible run except predeclared operational recovery that cannot reveal or change content. Assisted runs are labelled and excluded from primary analysis under the prospective rule.
@@ -63,6 +63,21 @@ A run is eligible for primary analysis when the frozen input and build digests m
 
 Failed and inconclusive scenarios receive the structured analysis in deliverable 6. Evaluators preserve actual outputs and do not repair missing citations or reinterpret a finding to improve its score.
 
+## 5.1 Material-assertion observation boundary
+
+Scoring observes every materially relevant statement exposed to a user or operational decision-maker, including hypothesis descriptions, visible investigation traces, intermediate explanations, terminal narratives, proposed findings, verified findings and other summaries. Submission as a `ProposedFinding` is not required for an assertion to enter the evaluation record.
+
+Each statement is classified at the moment of exposure:
+
+- **Exploratory:** clearly marked as a possibility, question, alternative explanation or hypothesis requiring further evidence. A legitimate exploratory statement is not an unsupported assertion merely because it is later rejected.
+- **Assertive:** presented as established, verified, causally explanatory, sufficiently supported or suitable for operational reliance. Material assertive statements require evidence at the claimed strength.
+
+Scorers assign a stable assertion-family key from semantic subject, predicate, value/direction, population/scope, period and claim strength. Rewordings and repetitions of the same underlying claim remain one family for the unsupported-assertion numerator. Every exposure time, channel, wording, strength, correction and retraction remains in the history. Opposing variants are linked in one contradiction family; each distinct unsupported proposition may be erroneous, while the contradiction is recorded once as a separate handling failure.
+
+A claim corrected before any user exposure creates no exposed unsupported-assertion event, but is recorded as an internal detection. A claim corrected or retracted after exposure remains counted from its first exposure. Removal from the final narrative does not erase the event. Repetition does not inflate the primary claim count, but repetition after counterevidence, correction or retraction raises persistence/severity and is reported separately.
+
+The assertion ledger must therefore retain: family ID, variant ID, exploratory/assertive status at each exposure, materiality, evidence state, audience/channel, first/last exposure, repeat count, contradiction links, correction/retraction time, whether exposure preceded correction, and final disposition.
+
 ## 6. Reproducibility and audit record
 
 Each run manifest records scenario input revision, implementation revision, comparator revision, public rubric revision, operation catalogue, policies, dependencies, OS/runtime, budgets, randomisation allocation, seed where used, retries, retrieval requests/results, evidence references, hypothesis revisions, stopping reason, verification output, failures, timestamps and artifact digests.
@@ -71,4 +86,4 @@ Procedure reproducibility means another authorised evaluator can reconstruct the
 
 ## 7. Current status
 
-The specification is **Proposed** pending independent approval. No scenario was authored, no comparator or Nexus investigative implementation exists, no hidden access boundary has been demonstrated, and no benchmark has run. Current workspace instructions alone cannot provide hidden-evaluation independence because the implementation agent can read repository content. Hidden materials must therefore remain outside this repository and outside implementation-agent access.
+The corrected specification is **Proposed** pending independent approval. No scenario was authored, no comparator or Nexus investigative implementation exists, no hidden access boundary has been demonstrated, and no benchmark has run. Current workspace instructions alone cannot provide hidden-evaluation independence because the implementation agent can read repository content. Hidden materials must therefore remain outside this repository and outside implementation-agent access.

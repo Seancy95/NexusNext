@@ -36,11 +36,17 @@ The following must be equal: visible metadata, authorised sources/fields, snapsh
 - A scenario representative checks, without disclosing hidden answers to implementers, that comparator operations can reach scored evidence.
 - The evaluation authority approves or rejects comparator readiness before any hidden run.
 
-Consensus among AI reviewers is not empirical proof. Acceptance requires executable open fixtures, independent reference calculations, capability coverage, challenge resolution and freeze evidence.
+Consensus among AI reviewers is not empirical proof.
 
-## 5. Comparator acceptance gate
+## 5. Gate C-SPEC — specification approval before WP02-B authorisation
 
-Before freeze the comparator must:
+Comparator **specification** approval is required before bounded WP02-B implementation may be authorised. The independent review confirms the capability catalogue, ordinary analytical methods, multi-round opportunity, evidence equivalence, resource model, limitations, open fixtures and challenge process. It records every objection and its accepted resolution, rejected rationale or blocking status.
+
+C-SPEC does not require an implemented comparator. Passing it allows Nexus and comparator development to proceed against a stable fair interface; it does not authorise comparative execution. An unresolved material fairness or competence objection blocks WP02-B authorisation.
+
+## 6. Gate C-IMPL — implementation approval before comparative execution
+
+After it is implemented and before any comparative hidden evaluation, the comparator must:
 
 1. pass all public golden KPI, trend, segmentation, anomaly, quality, relationship and exception fixtures;
 2. correctly produce no-finding and insufficient-evidence outcomes on open fixtures;
@@ -48,10 +54,11 @@ Before freeze the comparator must:
 4. use valid evidence references and the shared verifier without authority bypass;
 5. pass an independent code/spec review that identifies capability limitations;
 6. receive a fairness sign-off confirming evidence and opportunity parity; and
-7. freeze source, dependencies, configuration, playbook, thresholds and digest.
+7. freeze source, dependencies, configuration, playbook, thresholds and digest; and
+8. pass an independent competence and fairness review against the approved C-SPEC, including evidence-access and opportunity-budget parity dry runs.
 
-A challenge window occurs before hidden execution. Substantiated deficiencies are corrected for both fairness and fixtures, followed by a new freeze. After hidden outcomes, comparator changes are prohibited for that evaluation block. If a previously unknown material comparator defect invalidates fairness, the affected comparison is Inconclusive; the defect and rerun decision remain public.
+A challenge window occurs before hidden execution. Substantiated deficiencies are corrected for both fairness and fixtures, followed by a new freeze and C-IMPL review. Unresolved reviewer objections are recorded and block execution when material. After hidden outcomes, comparator changes are prohibited for that evaluation block. If a previously unknown material comparator defect invalidates fairness, the affected comparison is Inconclusive; the defect and rerun decision remain public.
 
-## 6. Limitations to report
+## 7. Limitations to report
 
 The comparator is expected to be weaker at selecting among unfamiliar competing explanations and adapting follow-ups beyond its reviewed playbook. It may nevertheless equal or beat Nexus. Its limitations, fixed dimensions, rules and operation branches are published before execution so they cannot be tailored retrospectively.

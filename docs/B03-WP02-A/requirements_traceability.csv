@@ -1,21 +1,22 @@
 requirement_id,requirement,design_location,acceptance_evidence,current_status
-WP02A-OBJ,Test material investigative improvement without assuming Nexus wins,01 sections 1 and 3; 03 section 8,Frozen paired estimand and valid failure outcome,Specified; Not Tested
-WP02A-STAGES,Separate public specification development validation hidden freeze execution and scoring,01 section 2,Signed stage manifests,Proposed; Not Implemented
-WP02A-HIDDEN,Prevent technical and human ground-truth leakage,05 sections 1 through 5,ACL logs role assignments contamination tests,Proposed; controls Not Implemented
-WP02A-SCENARIOS,Varied realistic synthetic scenario families,02 section 1,Frozen sampling matrix and independent quality review,Proposed; scenarios Not Created
-WP02A-TRUTH,Protected truth includes scope findings evidence contradictions causal and observable limits,02 sections 2 and 3,Independently reviewed truth record,Specified; Not Created
-WP02A-NEGATIVE,Separate no-material and insufficient-evidence cases,02 section 4; 03 sections 2 and 6,At least 6 cases in each stratum under proposal,Proposed; Not Tested
-WP02A-COMPARATOR,Competent deterministic analytics comparator,04 sections 1 and 2,Golden capability fixtures and independent acceptance,Specified; Not Implemented
-WP02A-FAIR,Equivalent access opportunity and resource budget,01 section 4; 04 section 3,Fairness manifest and paired budget audit,Specified; Not Tested
-WP02A-SCORING,Objective correct incorrect and efficiency scoring,03 sections 1 through 5,Public rubric and event-level scorer tests,Proposed; Not Implemented
-WP02A-VALUE,Prospective material value framework and numerical thresholds,03 sections 3 through 8,Approved preregistration before development,Proposed and Untested
-WP02A-STATS,Scenario counts repeats effects and uncertainty justified,02 section 5; 03 section 7,Prospective power or precision analysis and clustered intervals,Proposed; Not Performed
-WP02A-GATES,Separate judgments and critical failure gates,01 section 1; 03 sections 3 and 8,Five signed judgments and zero-tolerance event ledger,Specified; Not Tested
-WP02A-COMP-REVIEW,Formal independent comparator review,04 sections 4 and 5,Owner review challenge log fixtures and freeze,Proposed; Not Performed
-WP02A-CONTAMINATION,Ownership storage revisions access freeze retirement and replacement,05 sections 2 through 5,Custody manifest access evidence and incident procedure,Proposed; Not Implemented
-WP02A-FAILURE,Structured failure analysis for every failed/inconclusive scenario,06 and failure_analysis_template.csv,Complete event records linked to scenario manifests,Specified; Not Tested
-WP02A-WP02B,Smallest prospective implementation scope,07 sections 1 through 8,Architecture approval and bounded open fixtures,Proposed; Not Authorised
-WP02A-RISKS,Report risks assumptions and unresolved decisions,08 all sections,Owner dispositions and decision revisions,Delivered for review
-WP02A-APPROVAL,Explicit approval gate for WP02-B,09 G01 through G15,Named approvals with evidence references,Pending; WP02-B Not Approved
-WP02A-TRACE,Requirement-to-evaluation traceability,requirements_traceability.csv,Independent completeness review,Delivered; Not Independently Verified
-WP02A-STOP,No implementation hidden set in workspace or benchmark execution,README; 01 section 7; 07 section 8; 09 progression decision,Repository inventory shows documentation only,Applied
+WP02A-R01-F01,Score all materially relevant user-visible assertions,01 §5.1; 03 §§1-2; assertion_exposure_template.csv,Assertion-family ledger preserves exposure correction retraction and repetition,Specified; scorer Not Implemented
+WP02A-R01-DENOM,Define zero and undefined denominator handling,03 §6,Undefined recall precision and F1 remain NA; raw counts and applicable macro/micro results,Specified; Not Tested
+WP02A-R01-STATS,Reassess counts improvement precision power and class allocation,02 §5; 03 §§7-8,Transparent n calculation pilot variance and 80/100 alternatives,Proposed; Independent Review Pending
+WP02A-R01-GEN,Test shortcut resistance without penalising deterministic methods,02 §6; 07 §2,Metamorphic/contrast variants and decision-trace comparison,Specified; Scenarios Not Created
+WP02A-R01-COMP-SPEC,Independent comparator specification approval before WP02-B,04 §5; 09 G07,C-SPEC objections/resolutions and sign-off,Pending
+WP02A-R01-COMP-IMPL,Independent comparator competence/fairness approval before execution,04 §6; 09 E02,C-IMPL fixtures parity dry run review and freeze,Not Implemented
+WP02A-R01-GOV,Distinguish designed operational and independently verified separation,05 §2; 09 E03-E04,ACL exports deny tests logs release rehearsal and independent review,Designed Only
+WP02A-R01-BUSINESS,Prospective business-level value criteria,03 §9,Operational-decision mapping cost model and approved value thresholds,Proposed; Business Inputs Unresolved
+WP02A-R01-MATRIX,Prospective eight-outcome programme decision matrix,03 §10,Approved matrix frozen before hidden results,Proposed; Pending
+WP02A-R01-CHANGE,Change log and acceptance/readiness recommendation,CHANGELOG_R01.md; README; 08 §5; 09,Independent review disposition,Delivered; Not Independently Verified
+WP02A-OBJ,Test material investigative improvement without assuming Nexus wins,01 §§1-3; 03 §11,Frozen paired estimand and valid failure outcome,Specified; Not Tested
+WP02A-STAGES,Separate public development validation hidden freeze execution and scoring stages,01 §2,Signed stage manifests,Proposed; Not Implemented
+WP02A-SCENARIOS,Varied synthetic families including no-material and insufficient evidence,02 §§1-4,Frozen sampling matrix and independent quality review,Proposed; Not Created
+WP02A-COMPARATOR,Competent multi-round deterministic comparator,04 §§1-3,Capability fixtures and two independent gates,Specified; Not Implemented
+WP02A-FAIR,Equivalent evidence access and resource opportunity,01 §4; 04 §3,Fairness manifest and parity dry run,Specified; Not Tested
+WP02A-GATES,Separate judgments and zero-tolerance critical gates,01 §1; 03 §§3 and 11,Five judgments and event ledger,Specified; Not Tested
+WP02A-CONTAMINATION,Custody contamination quarantine retirement and replacement,05 §§2-5,Operational access evidence and incident records,Designed; Not Operational
+WP02A-FAILURE,Structured failed/inconclusive scenario analysis,06 and failure_analysis_template.csv,Complete event records,Specified; Not Tested
+WP02A-WP02B,Smallest unchanged implementation scope,07,Architecture approval and bounded open fixtures,Proposed; Not Authorised
+WP02A-APPROVAL,Separate WP02-B and evaluation-execution gates,09 G01-G15 and E01-E07,Named approvals and evidence references,Pending
+WP02A-STOP,No WP02-B comparator hidden scenarios or benchmark implementation,README; 07 §8; 09,Documentation-only Git diff,Applied

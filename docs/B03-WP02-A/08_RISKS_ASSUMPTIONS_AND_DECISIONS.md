@@ -15,12 +15,14 @@
 | WP01 contracts and authority restrictions | Approved predecessor boundary | Reuse without reopening absent demonstrated deficiency | Architecture owner confirms revision |
 | Public prospective scoring | Approved requirement | Freeze before implementation | Methodology owner approval |
 | Paired hidden design | Proposed method | Same scenario/access/budget, paired analysis | Independent methodology review |
-| Numerical thresholds | Proposed and untested | Values in deliverable 3 | Business/evaluation owners approve smallest valuable effect and safety bounds |
-| Controlled count | Proposed and untested | Minimum 40 distinct scenarios; final count from prospective power/precision | Statistician/evaluation owner signs analysis |
-| Hidden custody technology | Unresolved | Separate encrypted store/administration required; current repo prohibited | Security and scenario authorities select/control store |
+| Numerical thresholds | Proposed and untested | Corrected values and denominator rules in deliverable 3 | Business/evaluation owners approve smallest valuable effect and safety bounds |
+| Controlled count | Proposed and untested | 80 supports assumed overall paired effect; 100 proposed for full outcome-strata decision | Statistician/evaluation owner validates pilot assumptions and signs analysis |
+| Business decision value and cost | Unresolved | Operational action mapping, unit costs and acceptable value-to-cost ratio must be frozen | Business/programme owner approves before hidden results |
+| Hidden custody technology | Unresolved | Designed separation exists; operational enforcement and independent verification do not | Security/scenario authorities select the store and independent verifier |
 | Role assignments | Unresolved | Separation matrix specified; people/services unnamed | Programme owner names accountable roles and conflicts |
 | Materiality policy | Unresolved | Scenario-level weights and operational threshold needed | Domain owner approves before authoring |
-| Comparator implementation | Not Implemented | Capability and gate specified | Independent comparator owner assigned after approval |
+| Comparator specification | Proposed | C-SPEC review must pass before WP02-B authorisation | Independent comparator review panel |
+| Comparator implementation | Not Implemented | C-IMPL review is required before comparative execution | Independent comparator owner and review panel |
 | WP02-B method subset | Proposed | Bounded methods in deliverable 7 | Architecture/methodology approval required |
 | Hidden scenario set | Not Created | Must remain outside implementation workspace | Scenario authority creates only after custody approval |
 | Independent evaluation | Not Run | No claim of competence or advantage | Evaluation authority after freezes |
@@ -46,7 +48,7 @@
 
 ## 4. Untested assumptions
 
-- Forty or more scenarios will provide adequate precision for the proposed paired effect; pilot variance may require more.
+- Paired recall-difference SD is approximately 0.30; the pilot may show that 80 overall or 100 full-decision scenarios are inadequate.
 - The chosen synthetic population can represent the operational investigative decisions relevant to the intended claim.
 - A competent comparator can be implemented within the shared operation and budget interface without hidden disadvantage.
 - The bounded WP02-B method subset can produce a measurable advantage without the full catalogue.
@@ -58,3 +60,5 @@ These assumptions are not findings. Pilot/development evidence may refine the ne
 ## 5. Blocking unresolved decisions
 
 WP02-B cannot start until the approval checklist is complete. Hidden scenario creation cannot start until custody, personnel, materiality and ground-truth procedures are approved. Hidden execution cannot start until both implementations, public rubric, scorer, access controls and run plan are frozen. No result may be called independent until the access boundary has evidence.
+
+WP02-A-R01 is recommended for **conditional design acceptance** once an independent methodology/statistics reviewer approves the corrected denominators, sample-size assumptions, thresholds and business-value matrix. WP02-B remains **Not Ready** until every blocking checklist item, including comparator C-SPEC, is approved. This recommendation does not authorise implementation.

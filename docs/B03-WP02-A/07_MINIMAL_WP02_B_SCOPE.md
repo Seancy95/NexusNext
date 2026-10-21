@@ -23,6 +23,8 @@ This document is a proposal. WP02-B is not authorised and no listed component ex
 
 No anomaly model, general change-point method, free-form root-cause reasoning, fuzzy entity resolution, graph traversal, narrative interpretation, causal estimator, Enhanced Mode or report generator is included.
 
+The use of this predefined deterministic subset is legitimate and expected. Generalisation evidence will concern correct applicability decisions, combinations, ordering and follow-up adaptation under varied evidence structures. WP02-B is not required to invent methods outside this subset or exhibit unrestricted reasoning. This clarification does not expand the implementation scope.
+
 ## 3. Shared evaluation components
 
 The prospective package may include a synthetic fixture provider, a finite registered-operation catalogue, budget/trace controller integration, a small method registry, Nexus reasoning adapter, comparator adapter and output manifest adapter. Logical roles may remain in one process where separation adds no security value, but WP01 authority checks remain explicit.
